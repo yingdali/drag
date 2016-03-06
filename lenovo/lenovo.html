@@ -1,0 +1,836 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script>
+			var i=0;
+			i=window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+i+',minimum-scale='+i+',maximum-scale='+i+',user-scalable=no" />');
+		</script>
+		<title>无标题文档</title>
+		<script>
+			var oHtml=document.getElementsByTagName("html")[0];
+			var iWidth=oHtml.getBoundingClientRect().width;
+			oHtml.style.fontSize=iWidth/15+"px";
+		</script>
+		<style>
+			body,h2,ul,h3,h4,form,ul,p,input,li,select,textarea{ margin:0;padding:0; font-family:"宋体"; font-size:0.3rem;}
+				    li{  list-style:none;}
+					a{ text-decoration:none;}
+					img{border:none; vertical-align:top;}
+					.clearFix:after{content:"";display:block;clear:both;}
+		* {
+			-webkit-text-size-adjust: none;
+		}
+		a, input ,button {
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			-webkit-appearance: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		h1 {
+			margin: 0;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		html {
+			height: 100%;
+		}
+		body {
+			margin: 0; 
+			font-size: .6rem; 
+			font-family: Arial, "宋体"; 
+			height: 100%; 
+			overflow: hidden;
+			position: relative; 
+		}
+		#header {
+			height: 2rem; 
+			background: #e2231a;
+			/*text-align: center;*/
+			box-shadow: 0 0 1px #b2b2b2;
+			position: relative;
+			z-index: 3;
+		}
+		#logo { 
+			font: .85rem/ 1.425rem Tahoma; 
+			color: #fff;
+			background: url(img/logo.png) no-repeat 0 0.475rem;
+			padding-left: .85rem;
+			display: inline-block;
+			background-size: .425rem .55rem;
+			position: absolute;
+			left:6.5rem ;
+			top:0.13rem;
+		}
+		#content {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 2.175rem;
+			bottom: 0;
+			overflow: auto;
+			
+		}
+		.menu{background:url(img/xuebi-1.png) no-repeat 0 0;width: 2.78rem;height: 0.6rem;position: absolute;left:.2rem;top: .68rem;background-size: 6rem 8rem;}
+		.search {
+			width: 9.72rem;
+			height: 1.36rem;
+			border: 1px solid #FFFFFF;
+			border-radius: 0.075rem;
+			background-color: #FFFFFF;
+			border-radius: .2rem;
+			background: #eaeaea;
+			position: absolute;
+			left: 3.2rem;
+			top: 0.32rem;
+			font-size: .68rem;
+		}
+		.reset{background: url(img/xuebi-1.png) no-repeat 0 -0.8rem;width: 1.08rem;height: 0.84rem;position: absolute;left: 13.48rem;top: 0.6rem;background-size: 6rem 8rem;}
+		.img_1 img{height: 8.12rem;}
+		.img_1{height: 8.12rem;margin-top: 2rem;}
+		.newthings{height: 5.16rem;}
+		.newthings li{width: 3.72rem;height: 2.18rem;position: relative;border-right: 2px solid #d1d1d1;}
+		.newthings li a{color: #848484;}
+		.newthings li p{font-size: .44rem;text-align: center;padding-top: 1.34rem;}
+		.newthings ul{width: 3.72rem;height: 4.38rem;float: left;margin-top: .4rem;padding-bottom: .4rem;border-bottom: 2px solid #d1d1d1;}
+		.li1_1 span{background: url(img/xuebi-1.png) no-repeat 0 -1.84rem;position: absolute;left: 1.1rem;top: 0.22rem;width: 1.48rem;height: .56rem;background-size: 6rem 8rem;}
+		.li1_2 span{background: url(img/xuebi-1.png) no-repeat -5.12rem -1.84rem;position: absolute;left: 1.45rem;top: 0.38rem;width: .86rem;height: .86rem;background-size: 6rem 8rem;}
+		.li1_3 span{background: url(img/xuebi-1.png) no-repeat -1.62rem -1.84rem;position: absolute;left: 1.3rem;top: 0.1rem;width: 1.12rem;height: .72rem;background-size: 6rem 8rem;}
+		.li1_4 span{background: url(img/xuebi-1.png) no-repeat 0 -2.8rem;position: absolute;left: 1.34rem;top: 0.38rem;width: .94rem;height: .94rem;background-size: 6rem 8rem;}
+		.li1_5 span{background: url(img/xuebi-1.png) no-repeat -2.84rem -1.84rem;position: absolute;left: 1.4rem;top: 0rem;width: 0.94rem;height: .96rem;background-size: 6rem 8rem;}
+		.li1_6 span{background: url(img/xuebi-1.png) no-repeat -1rem -2.8rem;position: absolute;left: 1.4rem;top: 0.38rem;width: 1rem;height: 1rem;background-size: 6rem 8rem;}
+		.li1_7 span{background: url(img/xuebi-1.png) no-repeat -3.9rem -1.84rem;position: absolute;left: 1.4rem;top: 0rem;width: 1.02rem;height: .84rem;background-size: 6rem 8rem;}
+		.li1_8 span{background: url(img/xuebi-1.png) no-repeat -2.08rem -2.8rem;position: absolute;left: 1.4rem;top: 0.38rem;width: .9rem;height: .9rem;background-size: 6rem 8rem;}
+		.newthings ul .bottom p{padding-top: 1.68rem;}
+		.img_2 img{height: 4.18rem;}
+		.img_3 img{height: 5.08rem;border-bottom: 2px solid #e5e5e5;}
+		#content {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			overflow: auto;
+		}
+		.shangou{height: 8.64rem;}
+		.shangou nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;}
+		.shangou nav {font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.shangou .ul2_1{width: 7.46rem;height: 7.28rem;text-align: center;float: left;}
+		.shangou .ul2_2{width: 7.46rem;height: 7.28rem;float: left;}
+		.shangou .ul2_1 .li2_1{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .4rem;}
+		.shangou .ul2_1 img{padding-top: .28rem;width: 4.2rem;height: 5.18rem;}
+		.shangou .ul2_1 .li2_2{font-size: .48rem;color: #be2d32;font-weight: bold;text-align: center;padding-top: .28rem;padding-bottom: .28rem;}
+		.li221 img{width: 7.46rem;height: 3.6rem;}
+		.li221 a{height: 3.6rem;}
+		.li222 img{width: 7.46rem;height: 3.6rem;}
+		.li222 a{height: 3.6rem;}
+		.hui{height: .42rem;background-color: #eeeeee;}
+		.chaozhixiang nav{font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.chaozhixiang nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;padding-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;border-top: 2px solid #e5e5e5;}
+		.li3_1 h2{font-size: .56rem;color: #4f4f4f;}
+		.li3_1 h3{font-size: .46rem;color: #898989;padding-top: .18rem;}
+		.li3_1 div{padding-top: 1.3rem;text-indent: .62rem;float: left;}
+		.li3_1 img{width: 2.4rem;height: 2.22rem;float: left;padding-left: .48rem;padding-top: .76rem;}
+		.li3_2 h2{font-size: .56rem;color: #4f4f4f;padding-top: 1.3rem;text-indent: .62rem;float: left;}
+		.li3_2 img{width: 2.16rem;height: 2.94rem;float: left;padding-left: .48rem;padding-top: .76rem;}
+		.mingxingdanpin nav{font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.mingxingdanpin nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;padding-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;border-top: 2px solid #e5e5e5;}
+		.mingxingdanpin ul{height: 5rem;border-bottom: 2px solid #e5e5e5;}
+		.mingxingdanpin ul li{float: left;height: 5rem;width: 7.46rem;}
+		.li3_1{border-right: 2px solid #e5e5e5;}
+		.chaozhixiang ul{height: 4.08rem;}
+		.chaozhixiang li{width: 4.96rem;float: left;}
+		.chaozhixiang .li4_1 h2{font-size: .4rem;color: #323232;text-indent: 1.02rem;margin-top: .24rem;}
+		.li4_1 img{width: 3.84rem;height: 2.54rem;margin-left: 1.02rem;margin-top: .24rem;}
+		.li4_1 h3{font-size: .4rem;color: #bd3140;text-indent: .36rem;margin-top: .2rem;}
+		.chaozhixiang .li4_2 h2{font-size: .34rem;color: #898989;text-indent: 1.02rem;margin-top: .66rem;}
+		.li4_2 img{width: 1.22rem;height: 2.04rem;margin-left: 2.02rem;margin-top: .2rem;}
+		.li4_2 h3{font-size: .24rem;color: #bd3140;text-indent: 2.02rem;margin-top: .2rem;}
+		.li4_3 img{width: 3.36rem;height: 3.1rem;margin-left:.96rem;margin-top: .2rem;}
+		.li4_3 h3{font-size: .4rem;color: #bd3140;text-indent: 1.6rem;margin-top: .24rem;}
+		.li4_1{border-right: 2px solid #e5e5e5;}
+		.li4_2{border-right: 2px solid #e5e5e5;}
+		.idea li{width: 4.96rem;height: 5.76rem;}
+		.idea ul{height: 11.56rem;float: left;}
+		.idea .li5_1{padding-left: .56rem;width: 4.3rem;border-bottom: 2px solid #e5e5e5;border-right: 2px solid #e5e5e5;}
+		.idea .li5_2{padding-left: .56rem;width: 4.3rem;border-bottom: 2px solid #e5e5e5;border-right: 2px solid #e5e5e5;}
+		.idea .li5_3{padding-left: .56rem;width: 4.4rem;border-bottom: 2px solid #e5e5e5;}
+		.idea .li5_1 p{margin-left: .84rem;font-size: .32rem;color: #898989;}
+		.idea .li5_1 img{margin-top: .76rem;}
+		.idea .li5_2 img{margin-top: .56rem;padding-left: 1.04rem;}
+		.idea .li5_3 img{margin-top: .4rem;padding-left: .2rem;}
+		.idea .li5_2 p{margin-left: .84rem;font-size: .32rem;color: #898989;}
+		.idea .li5_3 p{margin-left: .84rem;font-size: .32rem;color: #898989;}
+		.img5_1 img{width: 3.96rem;height: 2.68rem;}
+		.img5_2 img{width: 2.72rem;height: 3.4rem;}
+		.img5_3 img{width: 4.2rem;height: 3.32rem;}
+		.img5_4 img{width: 3.8rem;height: 2.9rem;}
+		.img5_5 img{width: 2.5rem;height: 3.2rem;}
+		.img5_6 img{width: 4.22rem;height: 3.32rem;}
+		.idea{height: 11.56rem;}
+		.yaojin img{width: 15rem;height: 3.76rem;}
+		.F{height: 8.64rem;}
+		.firstF nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.firstF nav span{float: right;padding-right: .52rem;}
+		.ul6_1{width: 7.46rem;height: 7.28rem;text-align: center;float: left;}
+		.ul6_2{width: 7.46rem;height: 7.28rem;float: left;}
+		.ul6_1 .li6_1{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .4rem;}
+		.ul6_1 img{padding-top: .28rem;width: 5.7rem;height: 4.34rem;}
+		.li621 img{width: 3.18rem;height: 3.18rem;float: left;padding-top: .2rem;}
+		.li621{height: 3.18rem;float: left;}
+		.li621 h2{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .8rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 2.78rem;float: left;}
+		.li621 h3{font-size: .5rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 2.78rem;}
+		.li621 h4{color: #e2231a;font-size: .46rem;float: left;}
+		.li622{height: 3.18rem;float: left;}
+		.li622 img{width: 3.18rem;height: 3.18rem;padding-top:.28rem;float: left;}
+		.li6_2{font-size: .5rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;}
+		.li6_3{color: #e2231a;font-size: .46rem;}
+		.li622 h2{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .8rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 2.78rem;float: left;}
+		.li622 h3{font-size: .5rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 2.78rem;}
+		.li622 h4{color: #e2231a;font-size: .46rem;float: left;}
+		.p5{margin-top: .5rem;}
+		.zhineng img{width: 14.96rem;height: 3.8rem;}
+		.secondF nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.secondF nav span{float: right;padding-right: .52rem;}
+		.secondF{height: 9.5rem;}
+		.li721 img{width: 3.92rem;height: 1.96rem;}
+		.li722 img{width: 3.96rem;height: 3.2rem;}
+		.ul7_1 img{width: 5.8rem;height: 3.84rem;}
+		.ul7_2{width: 7.46rem;height: 7.28rem;float: left;}
+		.li721{height: 3.18rem;font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: 1.08rem;border-bottom: 2px solid #e5e5e5;}
+		.li721 h2{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .2rem;width: 2.78rem;}
+		.li721 h3{font-size: .4rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;}
+		.li721 h4{color: #e2231a;font-size: .46rem;float: left;width: 1.72rem;}
+		.li721 div{float: left;}
+		.li721 h2{text-indent: .56rem;}
+		.li721 h3{text-indent: .5rem;}
+		.li721 h4{text-indent: 1.4rem;}
+		.li722{height: 3.18rem;font-size: .48rem;color: #1c1c1c;font-weight: bold;border-bottom: 2px solid #e5e5e5;}
+		.li722 h2{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .2rem;width: 2.78rem;text-indent: .56rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+		.li722 h3{font-size: .4rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;text-indent: .5rem;}
+		.li722 h4{color: #e2231a;font-size: .46rem;float: left;width: 1.72rem;text-indent: 1.4rem;}
+		.li722 div{float: left;padding-top: .48rem;}
+		.secondF .ul7_1{width: 7.46rem;height: 7.28rem;text-align: center;float: left;margin-top: .58rem;}
+		.li7_1{font-size: .48rem;color: #1c1c1c;font-weight: bold;padding-top: .4rem;text-indent: .84rem;    text-align:start;}
+		.ul7_2{width: 7.46rem;height: 7.28rem;float: left;border-right: 2px solid #e5e5e5;}
+		.li7_3{color: #e2231a;font-size: .46rem;text-indent: .84rem;text-align: start;}
+		.li7_2{font-size: .5rem;color: #aeaeae;padding-top: .28rem;padding-bottom: .28rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 5.24rem;text-indent: .84rem;text-align: start;}
+		.ThreeF nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.ThreeF nav span{float: right;padding-right: .52rem;}
+		.ThreeF{height: 9.8rem;}
+		.ThreeF ul .img6_1{width: 4.18rem;height: 5.1rem;}
+		.ThreeF ul .img6_2{width: 2.12rem;height: 3.44rem;padding-left: .44rem;}
+		.ThreeF ul .img6_3{width: 2.72rem;height: 3.34rem;}
+		.h6_2{padding-left: .92rem;}
+		.h6_4{padding-left: .92rem;}
+		.FourF nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.FourF nav span{float: right;padding-right: .52rem;}
+		.FourF{height: 9.5rem;}
+		.Five nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.Five nav span{float: right;padding-right: .52rem;}
+		.Five{height: 9.8rem;}
+		.Five ul .img6_1{width: 4.18rem;height: 5.1rem;}
+		.Five ul .img6_2{width: 2.12rem;height: 3.44rem;padding-left: .44rem;}
+		.Five ul .img6_3{width: 2.72rem;height: 3.34rem;}
+		.SixF{height: 9.5rem;}
+		.SixF nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.SixF nav span{float: right;padding-right: .52rem;}
+		.SixF ul .img6_1{width: 4.18rem;height: 5.1rem;}
+		.SixF ul .img6_2{width: 2.12rem;height: 3.44rem;padding-left: .44rem;}
+		.SixF ul .img6_3{width: 2.72rem;height: 3.34rem;}
+		.Tese{height: 81.48rem;}
+		.Tese nav{height: 1.36rem;border-bottom: 2px solid #e5e5e5;font-weight: bold;margin-top: .48rem;font-size: .5rem;color: #1c1c1c;text-indent: .46rem;}
+		.Tese nav span{float: right;padding-right: .52rem;}
+		.Tese .left{width: 7.4rem;height: 77.94rem;float: left;}
+		.left li img{width: 5.74rem;height: 5.2rem;margin-left: .9rem ;display: block;}
+		.left li h3{margin-left: .9rem;font-size: .5rem;color: #e2231a;margin-top: .28rem;padding-bottom: .28rem;}
+		.left li{border-bottom: 2px solid #e5e5e5;border-right: 2px solid #e5e5e5;}
+		.left li h2{font-size: .56rem;color: #575757;margin-left: .8rem;margin-top: .28rem;}
+		.Tese .right{width: 7.4rem;height: 77.94rem;border-right: 2px solid #e5e5e5;float: left;}
+		.right li img{width: 5.74rem;height: 5.2rem;margin-left: .9rem ;display: block;}
+		.right li h3{margin-left: .9rem;font-size: .5rem;color: #e2231a;margin-top: .28rem;padding-bottom: .28rem;}
+		.right li{border-bottom: 2px solid #e5e5e5;}
+		.right li h2{font-size: .56rem;color: #575757;margin-left: .8rem;margin-top: .28rem;}
+		.red{height: 5.24rem;background-color: #e2231a;}
+		.red nav{padding-top: 1.1rem;font-weight: normal;}
+		.red nav a{padding-left: .56rem;padding-right: .5rem;line-height: .62rem;margin-top: 1.1rem;font-size: .48rem;border-right: 1px solid #FFFFFF;font-weight: normal;}
+		.red  a{color: #FFFFFF;}
+		.red p{text-align: center;font-size: .56rem;padding-top: .58rem;}
+		.red p a{padding-right: .66rem;}
+		.red h2{text-align: center;font-size: .56rem;padding-top: .72rem;color: #FFFFFF;font-weight: normal;}
+		/*
+		#footer{height: 1.64rem; position: relative;}
+		.footer_1{width: .38rem;height: .78rem;background: url(img/xuebi-1.png) no-repeat -.96rem -3.96rem;position: absolute;left: 2.04rem;top: .52rem;background-size:6rem 8rem;}
+		.footer_2{width: .38rem;height: .78rem;background: url(img/xuebi-1.png) no-repeat -1.92rem -3.96rem;position: absolute;left: 4.7rem;top: .52rem;background-size:6rem 8rem;}
+		.footer_3{width: .76rem;height: .64rem;background: url(img/xuebi-1.png) no-repeat -3.38rem -2.8rem;position: absolute;left: 7.12rem;top: .52rem;background-size:6rem 8rem;}
+		.footer_4{width: .74rem;height: .74rem;background: url(img/xuebi-1.png) no-repeat -4.58rem -2.8rem;position: absolute;left: 9.78rem;top: .52rem;background-size:6rem 8rem;}
+		.footer_5{width: .72rem;height: .78rem;background: url(img/xuebi-1.png) no-repeat 0 -3.96rem;position: absolute;left: 12.42rem;top: .5rem;background-size:6rem 8rem;}
+		手机底部*/
+		.firstF nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.firstF nav{position: relative;}
+		.secondF nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.secondF nav{position: relative;}
+		.ThreeF nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.ThreeF nav{position: relative;}
+		.FourF nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.FourF nav{position: relative;}
+		.Five nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.Five nav{position: relative;}
+		.SixF nav span{background: url(img/xuebi-1.png) no-repeat -2.86rem -4.38rem;position: absolute;left: 14.18rem;background-size:6rem 8rem;width: .28rem;height: .52rem;}
+		.SixF nav{position: relative;}
+		.li4_1 h3{margin-top: .1rem;line-height: .4rem;}
+		.chaozhixiang li{height: 4rem;}
+		.sanjiao{border-radius:.82rem;width: 1.64rem;height: 1.64rem;display: block;background-color: #71120d;opacity: .7;position: relative;}
+		.sanjiao em{position: absolute;left:0.4rem;top:0.4rem;background: url(img/xuebi-1.png) no-repeat -2.5rem -3.96rem;width: .8rem;height: .44rem;background-size:6rem 8rem;}
+		.divfooter{position: fixed;left: 13rem;bottom:1.2rem;width: 1.64rem;height: 1.64rem;background-color: #71120d;opacity: .7;border-radius:.82rem;}
+		.divfooter_2{position: fixed;left: 12.2rem;bottom:4.14rem;width: 1.64rem;height: 1.64rem;}
+		.choujiang{width: 2.42rem;height:2.42rem;display: block;position: relative;}
+		.choujiang em{position: absolute;left:0rem;top:0rem;background: url(img/xuebi-1.png) no-repeat 0rem -4.9rem;width: 2.42rem;height: 2.42rem;background-size:6rem 8rem;}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">
+			<span href="#" class="menu"></span>
+			<input type="text" class="search" value="" name="sousuo" />
+			<a href="#" class="reset"></a>
+		</header>
+		<section id="content">
+			<section class="img_1">
+				<img src="img/a_1.png" />
+			</section>
+			<section class="newthings">
+				<ul>
+					<li class="li1_1 top">
+						<span></span>
+						<p>
+							<a href="#">新品</a>
+						</p>
+					</li>
+					<li class="li1_2 bottom">
+						<span></span>
+						<p>
+							<a href="#">全线商品展示</a>
+						</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="li1_3 top">
+						<span></span>
+						<p>
+							<a href="#">商品分类</a>
+						</p>
+					</li>
+					<li class="li1_4 bottom">
+						<span></span>
+						<p>
+							<a href="#">服务与咨询</a>
+						</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="li1_5 top">
+						<span></span>
+						<p>
+							<a href="#">我的</a>
+						</p>
+					</li>
+					<li class="li1_6 bottom">
+						<span></span>
+						<p>
+							<a href="#">乐商店</a>
+						</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="li1_7 top">
+						<span></span>
+						<p>
+							<a href="#">社区</a>
+						</p>
+					</li>
+					<li class="li1_8 bottom">
+						<span></span>
+						<p>
+							<a href="#">想约我么</a>
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="img_2">
+				<img src="img/a-2.png" />
+			</section>
+			<section class="img_3">
+				<img src="img/a-3.png" />
+			</section>
+			<section class="shangou">
+				<nav>
+					闪购
+				</nav>
+				<ul class="ul2_1">
+					<li class="li2_1">X3青春版 新品首发</li>
+					<img src="img/a-1.png" />
+					<li class="li2_2">首发价 ￥1899</li>
+				</ul>
+				<ul class="ul2_2">
+					<li class="li221">
+						<a href="#">
+							<img src="img/a-4.png" />
+						</a>
+					</li>
+					<li class="li222">
+						<a href="#">
+							<img src="img/a-5.png" />
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="chaozhixiang">
+				<nav>
+					超值享
+				</nav>
+				<ul class="ul4_1">
+					<li class="li4_1">
+						<a href="#">
+							<h2>天逸　100—14英寸</h2>
+							<img src="img/a-8.png" />
+							<h3>￥3299</h3>
+						</a>
+					</li>
+					<li class="li4_2">
+						<a href="#">
+							<h2>乐檬K3　Note移动端</h2>
+							<img src="img/a-9.png" />
+							<h3>￥699</h3>
+						</a>
+					</li>
+					<li class="li4_3">
+						<a href="#">
+							<img src="img/a-10.png" />
+							<h3>￥6199</h3>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="mingxingdanpin">
+				<nav>
+					明星单品
+				</nav>
+				<ul class="ul3_1">
+					<li class="li3_1">
+						<a href="#">
+							<div>
+								<h2>小新经典版...</h2>
+								<h3>轻活高清ie7处...</h3>
+							</div>
+							<img src="img/a-6.png" />
+						</a>
+					</li>
+					<li class="li3_2">
+						<a href="#">
+							<h2>联想P1全...</h2>
+							<img src="img/a-7.png" />
+						</a>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="idea">
+				<ul class="ul5_1">
+					<li class="li5_1 img5_1">
+						<img src="img/b-1.png" />
+						<p class="p5">IdeaPad　700S-</p>
+						<p>141SK-6Y30</p>
+					</li>
+					<li class="li5_1 img5_4">
+						<img src="img/b-4.png" />
+						<p>A7-20F 新小七</p>
+						<p>为你而来</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="li5_2 img5_2">
+						<img src="img/b-2.png" />
+						<p>128G固态盘</p>
+						<p>(NGFF接口)送软胶</p>
+					</li>
+					<li class="li5_2 img5_5">
+						<img src="img/b-5.png" />
+						<p>YOGA 4</p>
+						<p>Pro(YOGA900)-ISE(银色)</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="li5_3 img5_3">
+						<img src="img/b-3.png" />
+						<p>S8-50F 联想小</p>
+						<p>S拼搏版</p>
+					</li>
+					<li class="li5_3 img5_6">
+						<img src="img/b-6.png" />
+						<p>联想至尊安全U</p>
+						<p>盘 16G</p>
+					</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="yaojin">
+				<img src="img/b-7.png" />
+			</section>
+			<section class="firstF">
+				<nav>
+					1F　Lenovo　PC <span></span>
+				</nav>
+				<ul class="ul6_1">
+					<img src="img/c-1.png" />
+					<li class="li6_1">拯救者15-ISK i7尊享版</li>
+					<li class="li6_2">15.6英寸新品重磅上市 </li>
+					<li class="li6_3">￥8299</li>
+				</ul>
+				<ul class="ul6_2">
+					<li class="li621">
+						<a href="#">
+							<img src="img/c-2.png" />
+							<h2>YOGA 4 Pro(YOGA 900)-13-IFI(金色)(L)</h2>
+							<h3>匠心绽放 配置升级</h3>
+							<h4>￥8499</h4>
+						</a>
+					</li>
+					<li class="li622">
+						<a href="#">
+							<img src="img/c-3.png" />
+							<h2>Erazer X310 I545908GSD120G-D(A)（单主机）</h2>
+							<h3>游戏主机 性能强劲 </h3>
+							<h4>￥4299</h4>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="zhineng">
+				<img src="img/c-4.png" />
+			</section>
+			<section class="hui"></section>
+			<section class="secondF">
+				<nav>
+					2F　Think产品 <span></span>
+				</nav>
+				<ul class="ul7_2">
+					<li class="li721">
+						<div>
+							<h2>ThinkPad...</h2>
+							<h3>看你看不见的</h3>
+							<h4>￥8299</h4>
+						</div>
+						<img src="img/c-5.png" />
+					</li>
+					<li class="li722">
+						<div>
+							<h2>Moleskine For Thinker 记事本</h2>
+							<h3>从不止于书写</h3>
+							<h4>￥199</h4>
+						</div>
+						<img src="img/c-6.png" />
+					</li>
+				</ul>
+				<ul class="ul7_1">
+					<img src="img/c-7.png" />
+					<li class="li7_1">ThinkPad T450</li>
+					<li class="li7_2">点燃心中焰火—点击抽取100元优惠 </li>
+					<li class="li7_3">￥7099</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="ThreeF">
+				<nav>
+					3F　Lenovo　PC <span></span>
+				</nav>
+				<ul class="ul6_1">
+					<img src="img/c-8.png" / class="img6_1">
+					<li class="li6_1">联想乐檬3　金色</li>
+					<li class="li6_3">￥699</li>
+				</ul>
+				<ul class="ul6_2">
+					<li class="li621">
+						<a href="#">
+							<img src="img/c-9.png" / class="img6_2">
+							<h2 class="h6_2">联想大V...</h2>
+							<h4 class="h6_4">￥1799</h4>
+						</a>
+					</li>
+					<li class="li622">
+						<a href="#">
+							<img src="img/c-10.png" / class="img6_3">
+							<h2 class="h6_2">联想乐檬...</h2>
+							<h4 class="h6_4">￥1899</h4>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!--以下重复了-->
+			<section class="hui"></section>
+			<section class="FourF">
+				<nav>
+					4F　平板 <span></span>
+				</nav>
+				<ul class="ul7_2">
+					<li class="li721">
+						<div>
+							<h2>ThinkPad...</h2>
+							<h3>看你看不见的</h3>
+							<h4>￥8299</h4>
+						</div>
+						<img src="img/c-5.png" />
+					</li>
+					<li class="li722">
+						<div>
+							<h2>Moleskine For Thinker 记事本</h2>
+							<h3>从不止于书写</h3>
+							<h4>￥199</h4>
+						</div>
+						<img src="img/c-6.png" />
+					</li>
+				</ul>
+				<ul class="ul7_1">
+					<img src="img/c-7.png" />
+					<li class="li7_1">ThinkPad T450</li>
+					<li class="li7_2">点燃心中焰火—点击抽取100元优惠 </li>
+					<li class="li7_3">￥7099</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="Five">
+				<nav>
+					5F　智能电视<span></span>
+				</nav>
+				<ul class="ul6_1">
+					<img src="img/c-8.png" / class="img6_1">
+					<li class="li6_1">联想乐檬3　金色</li>
+					<li class="li6_3">￥699</li>
+				</ul>
+				<ul class="ul6_2">
+					<li class="li621">
+						<a href="#">
+							<img src="img/c-9.png" / class="img6_2">
+							<h2 class="h6_2">联想大V...</h2>
+							<h4 class="h6_4">￥1799</h4>
+						</a>
+					</li>
+					<li class="li622">
+						<a href="#">
+							<img src="img/c-10.png" / class="img6_3">
+							<h2 class="h6_2">联想乐檬...</h2>
+							<h4 class="h6_4">￥1899</h4>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="SixF">
+				<nav>
+					6F　我要服务 <span></span>
+				</nav>
+				<ul class="ul7_2">
+					<li class="li721">
+						<div>
+							<h2>ThinkPad...</h2>
+							<h3>看你看不见的</h3>
+							<h4>￥8299</h4>
+						</div>
+						<img src="img/c-5.png" />
+					</li>
+					<li class="li722">
+						<div>
+							<h2>Moleskine For Thinker 记事本</h2>
+							<h3>从不止于书写</h3>
+							<h4>￥199</h4>
+						</div>
+						<img src="img/c-6.png" />
+					</li>
+				</ul>
+				<ul class="ul7_1">
+					<img src="img/c-7.png" />
+					<li class="li7_1">ThinkPad T450</li>
+					<li class="li7_2">点燃心中焰火—点击抽取100元优惠 </li>
+					<li class="li7_3">￥7099</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="Tese">
+				<nav>
+					特色推荐 <span></span>
+				</nav>
+				<ul class="left">
+					<li>
+						<img src="img/d-1.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-4.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-4.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-1.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+				</ul>
+				<ul class="right">
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-4.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-2.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-3.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-4.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+					<li>
+						<img src="img/d-4.png" />
+						<h2>小新V4000(Win10升级版)</h2>
+						<h3>￥5199</h3>
+					</li>
+				</ul>
+			</section>
+			<section class="hui"></section>
+			<section class="red">
+				<nav>
+					<a href="#">购物指南</a>
+					<a href="#">物流售后</a>
+					<a href="#">订单支付</a>
+					<a href="#">其他说明</a>
+				</nav>
+				<p>
+					<a href="#">客户端</a>
+					<a href="#">触屏端</a>
+					<a href="#">电脑端</a>
+				</p>
+				<h2>
+		Copyright ? 2014 联想商城 All Rights Reserved
+	            </h2>
+			</section>
+			<!--
+			<footer id="footer">
+				<a href="#" class="footer_1"></a>
+				<a href="#" class="footer_2"></a>
+				<a href="#" class="footer_3"></a>
+				<a href="#" class="footer_4"></a>
+				<a href="#" class="footer_5"></a>
+			</footer>
+			-->
+		
+		</section>
+			<div class="divfooter">
+			<span class="sanjiao">
+				<em></em>
+			</span>
+			<div class="divfooter_2">
+			<span class="choujiang">
+				<em></em>
+			</span>
+			</div>
+			</div>
+			<!--
+			<div class="divfooter_2">
+			
+			<span class="zhuanpan">
+				<em></em>
+			</span>
+			<span class="choujiang">
+				<em></em>
+			</span>
+			</div>
+			-->
+	</body>
+
+</html>
