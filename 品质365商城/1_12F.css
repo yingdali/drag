@@ -1,7 +1,13 @@
 .zhenA1F header h2{height: 38px;line-height: 38px;padding-top: 7px;background-color: #f5f5f5;font-size: 18px;float: left;}
+.Brand_recommendation ul li img{width: 123px;height: 80px;transition: .2s;}
+.Brand_recommendation ul li img:hover{transform:scale(1.05);}
+.zhenA1F div ul .top img{transition: .2s;}
+.zhenA1F div ul .top img:hover{transform:scale(1.05);}
+.zhenA1F div .li1_1 a:hover{text-decoration: underline;}
 .zhenA1F{background-color:#f5f5f5;}
 .zhenA1F header i{font-size: 30px;padding-right: 5px;}
 .zhenA1F header nav {line-height: 25px;padding-top: 20px;float: right;}
+.zhenA1F header nav a:hover{color: red;}
 .zhenA1F header nav a{display: block;float: left;color: #000000;padding-right: 25px;font-size: 13px;}
 .zhenA1F header{height: 45px;border-bottom: 2px solid #000000;width: 1210px;margin:  0 auto;}
 .zhenA1F header nav .last{padding-right: 10px;}
@@ -17,10 +23,11 @@
 .zhenA1F div .li1_1 .ten span{padding-right: 6px;}
 .zhenA1F div .li1_1 .color a{color: #8a9301;}
 .zhenA1F div ul{width: 202px; height:431px ;float: left;border-right: 1px solid #e5e5e5;}
-.zhenA1F div ul .top{width: 202px;height: 260px;border-bottom: 1px solid #E5E5E5;}
+.zhenA1F div ul .top{width: 202px;height: 260px;border-bottom: 1px solid #E5E5E5;overflow: hidden;}
 .zhenA1F div ul .top img{width: 202px;}
-.zhenA1F div ul .bottom{width: 202px;height: 171px;}
-.zhenA1F div ul .bottom img{width: 202px;}
+.zhenA1F div ul .bottom{width: 202px;height: 171px;overflow: hidden;}
+.zhenA1F div ul .bottom img:hover{transform:scale(1.05);}
+.zhenA1F div ul .bottom img{width: 202px;transition: .2s;}
 .zhenA1F div .ul2_1{width: 202px;height: 431px;}
 .zhenA1F div{padding-bottom: 28px;}
 .zhenA1F div .li1_1 .color2 a{color: #ffa631;}
