@@ -1,0 +1,15 @@
+body{min-width:1210px;}
+.site-nav-bd{width:1210px;}
+.logo-search-bd{width:1210px;}
+.nav-bar-bd{width:1210px;}
+.site-search-box{padding-left:165px;}
+.content-wrap{width:1210px;}
+.shop-cart{width:253px;}
+.shop-cart li a.user-service{width:105px;}
+.shop-cart li a.user-service:hover{background-position:-81px -31px;}
+.shop-cart li span.shop-cart-num{width:117px;}
+.shop-cart li span.hover{background-position:-186px -31px;}
+.footer-bd-u{width:1210px;}
+#topBannerImg .topBanner {width:1210px;height:0;background:url(ad1.jpg) no-repeat;margin:0 auto;}
+#topBannerImg .topBannerMaxarea {width:1600px;margin:0 auto;}
+

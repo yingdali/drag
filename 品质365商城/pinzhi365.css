@@ -1,17 +1,40 @@
 
 		    li{  list-style:none;}
 			a{ text-decoration:none;}
-			img{border:none; vertical-align:top;}
-		    body,h1,h2,ul,h3,form,ul,p,input,li,select,textarea,button,dl,dd{margin:0;padding:0; font-family:"microsoft yahei"; font-size:12px;}
+			img{border:none; vertical-align:top;/*opacity: 0;*/}
+		    body,h1,h2,ul,h3,h4,form,ul,p,input,li,select,textarea,button,dl,dd{margin:0;padding:0; font-family:"microsoft yahei"; font-size:12px;}
 		    dd{margin: 0;}
 			.clearFix:after{content:"";display:block;clear:both;}
 			.hui {
 				background-color: #f2f2f2;
 				line-height: 25px;
 				height: 25px;
-				overflow: hidden;
 			}
-			
+
+			.slide-control {
+			    position: absolute;
+			    z-index: 2;
+			    right: 50%;
+			    margin-right: -300px;
+			    bottom: 10px;
+			    height: 15px;
+			    line-height: 15px;
+			    overflow: hidden;
+			    padding: 2px;
+			    border-radius: 5px;
+			}
+			.slide-control li {
+			    float: left;
+			    width: 15px;
+			    height: 15px;
+			    line-height: 12px;
+			    overflow: hidden;
+			    box-shadow: #ccc 0 0 3px;
+			    cursor: pointer;
+			    margin: 0 3px;
+			    border-radius: 50%;
+			    background: #fff;
+			}
 			.hello {
 				float: right;
 				width: 437px;
@@ -92,7 +115,7 @@
 			
 			.zhenlogo {
 				position: relative;
-				overflow: hidden;
+				/*overflow: hidden;*/
 			}
 			
 			.logo {
@@ -116,10 +139,13 @@
 				width: 449px;
 				line-height: 34px;
 				height: 30px;
+				border: 0;
 				border: 2px solid #ef363e;
 				text-indent: 5px;
 				color: #959595;
 				padding: 0;
+				outline: none;
+				 font-size: 14px;
 			}
 			
 			.logo ul .row1 {
@@ -193,6 +219,7 @@
 			
 			.spring {
 				position: relative;
+				width: 100%;
 			}
 			
 			.spring img {
@@ -578,7 +605,7 @@
 				text-align: center;
 			}
 			
-			.Brand_recommendation .ul_1 li:hover {
+			/*.Brand_recommendation .ul_1 li:hover {
 				background-color: black;
 			}
 			
@@ -586,7 +613,7 @@
 				color: #FFFFFF;
 				width: 123PX;
 				height: 80PX;
-			}
+			}*/
 			
 			.Brand_recommendation .ul_1 li a {
 				font-size: 18px;
@@ -699,7 +726,7 @@
 			
 			footer section {
 				height: 190px;
-				width: 905px;
+				width: 906px;
 				margin: 0 auto;
 				margin-top: 43px;
 				border-bottom: 1px solid #efefef;
@@ -758,3 +785,158 @@
 				width: 1300px;
 				margin: 0 auto;
 			}
+			.spring{overflow: hidden;}
+			.hello .select1{
+				position: absolute;
+				left: 307px;
+				top: 25px;
+				float: none;
+				z-index: 10;
+			}
+			.hello .select2{
+				position: absolute;
+				left: 307px;
+				top: 50px;
+			}
+			.hello .select3{
+				position: absolute;
+				left: 307px;
+				top: 75px;
+			}
+			.select{
+				display: none;
+				opacity: 0;
+				width: 70px;
+			}
+			.second{
+				margin-left: 123px;
+				display: none;
+			}
+			.first{
+				height: 324px;
+				display: block;
+			}
+			.Brand_recommendation .ul_1 .active{
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+			.spring .slide-control .active1{
+				background-color: #ef363e;
+			}
+			.spring .lunbo .active2{
+				opacity: 0;
+			}
+			.lunbo img{
+			display: none;
+			}
+			.lunbo .showw{
+				display: block;
+			}
+			.category-sub{
+			    min-height: 460px;
+			    background-color: rgba(255,255,255,0.9);
+			    position: absolute;
+			    left: 210px;
+			    top: 0;
+			    width: 990px;
+			    border: 5px solid #fed4d6;
+						}
+			.category-sub-inner{
+				    min-height: 460px;
+			}
+			.clearfix{
+				zoom: 1;
+			}
+			.category-key{
+				width: 750px;
+				    float: left;
+			}
+			.group{
+				padding: 10px 0;
+			}
+			.group h4{
+				float: left;
+			    padding-right: 20px;
+			}
+			.group p {
+			    float: left;
+			    width: 630px;
+			}
+			 .group h4 a {
+			    font-size: 13px;
+			    font-weight: bold;
+			    text-decoration: underline;
+			    color: #3c3c3c;
+			}
+			.group p a {
+			    padding: 0 5px;
+			    color: #676968;
+			    height: 16px;
+			    line-height: 20px;
+			    border-left: 1px solid #e0e0e0;
+			    white-space: nowrap;
+			}
+			.category-advs{
+				{
+			    width: 210px;
+			    padding: 12px 15px;
+			    background-color: #fff;
+			}
+			}
+			.category-sub-1{
+				top:-39px;
+			}
+			.category-sub-2{
+				top:-78px;
+			}
+			.category-sub-3{
+				top:-117px;
+			}
+			.category-sub-4{
+				top:-156px;
+			}
+			.category-sub-5{
+				top:-195px;
+			}
+			.category-sub-6{
+				top:-234px;
+			}/*7*/
+            .category-sub-7{
+				top:-273px;
+			}
+            .category-sub-8{
+				top:-312px;
+			}
+            .category-sub-9{
+				top:-352px;
+			}
+						.category-sub-10{
+				top:-391px;
+			}
+						.category-sub-11{
+				top:-430px;
+			}
+						.category-sub-12{
+				top:-469px;
+			}
+
+
+/*.logo h1:hover{
+	-webkit-transform: translate(0px,-0px);
+	opacity: 1;
+}*/
+
+.zhenA1F div .li1_1 .color1 a {
+	    color: #8a9301;
+}
+/*h2{
+	opacity: 0;
+	-webkit-transform: translate(-90px,-90px);
+	transition: opacity 1s ease-in 0.5s,transform 1s ease-in; 
+}*/
+/*
+.zhenA1F header.activem{
+	-webkit-transform: translate(0px,-0px);
+	     opacity: 1;
+}*/
+
