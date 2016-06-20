@@ -1,0 +1,43 @@
+.zhenA1F header h2{height: 38px;line-height: 38px;padding-top: 7px;background-color: #f5f5f5;font-size: 18px;float: left;}
+.Brand_recommendation ul li img{width: 123px;height: 80px;transition: .2s;}
+.Brand_recommendation ul li img:hover{transform:scale(1.05);}
+.zhenA1F div ul .top img{transition: .2s;}
+.zhenA1F div ul .top img:hover{transform:scale(1.05);}
+.zhenA1F div .li1_1 a:hover{text-decoration: underline;}
+.zhenA1F{background-color:#f5f5f5;}
+.zhenA1F header i{font-size: 30px;padding-right: 5px;}
+.zhenA1F header nav {line-height: 25px;padding-top: 20px;float: right;}
+.zhenA1F header nav a:hover{color: red;}
+.zhenA1F header nav a{display: block;float: left;color: #000000;padding-right: 25px;font-size: 13px;}
+.zhenA1F header{height: 45px;border-bottom: 2px solid #000000;width: 1210px;margin:  0 auto;}
+.zhenA1F header nav .last{padding-right: 10px;}
+.zhenA1F div .li1_0{width: 195px;height: 40px;background-color: #FFFFFF;}
+.zhenA1F div .ul1_1{border-right: 1px solid #e5e5e5;width: 195px;height: 431px;margin-left: 67px;}
+.zhenA1F div{width: 1210px;height: 431px;}
+.zhenA1F div .li1_1 a{display: block;color: #323232;}
+.zhenA1F div .li1_1{width: 195px;height: 380px;padding-top: 15px;border-right: 1px solid #e5e5e5;background-color: #FFFFFF;}
+.zhenA1F div .li1_1 a{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 150px;}
+.zhenA1F div .li1_1 p{line-height: 35px;font-size: 13px;text-indent: 26px;}
+.zhenA1F div .li1_1 p span{padding-right: 11px;}
+.zhenA1F div .li1_1 .ten{margin-left: -3px;}
+.zhenA1F div .li1_1 .ten span{padding-right: 6px;}
+.zhenA1F div .li1_1 .color a{color: #8a9301;}
+.zhenA1F div ul{width: 202px; height:431px ;float: left;border-right: 1px solid #e5e5e5;}
+.zhenA1F div ul .top{width: 202px;height: 260px;border-bottom: 1px solid #E5E5E5;overflow: hidden;}
+.zhenA1F div ul .top img{width: 202px;}
+.zhenA1F div ul .bottom{width: 202px;height: 171px;overflow: hidden;}
+.zhenA1F div ul .bottom img:hover{transform:scale(1.05);}
+.zhenA1F div ul .bottom img{width: 202px;transition: .2s;}
+.zhenA1F div .ul2_1{width: 202px;height: 431px;}
+.zhenA1F div{padding-bottom: 28px;}
+.zhenA1F div .li1_1 .color2 a{color: #ffa631;}
+.zhenA1F div .li1_1 .color3 a{color: #fb1631;}
+.zhenA1F div .li1_1 .color4 a{color: #ab40ed;}
+.zhenA1F div .li1_1 .color5 a{color: #1a4fd6;}
+.zhenA1F div .li1_1 .color6 a{color: #cb7a1a;}
+.zhenA1F div .li1_1 .color7 a{color: #d7a90b;}
+.zhenA1F div .li1_1 .color8 a{color: #f954cb;}
+.zhenA1F div .li1_1 .color9 a{color: #31b1a0;}
+.zhenA1F div .li1_1 .color10 a{color: #29bbf1;}
+.zhenA1F div .li1_1 .color11 a{color: #1d66d4;}
+.zhenA1F div .li1_1 .color12 a{color: #e77e29;}

@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="html5shiv.min.js"></script>
+		<style>
+			body,h2,ul,h3,form,ul,p,input,li,select,textarea{ margin:0;padding:0; font-family:"宋体"; font-size:12px;}
+		    li{  list-style:none;}
+			a{ text-decoration:none;}
+			img{border:none; vertical-align:top;}
+			.clearFix:after{content:"";display:block;clear:both;}
+			.header{height: 70px;margin: 0 auto;width: 980px;}
+			/*.header *{ background: red;}*/
+			.header div{width: 162px;height: 42px;float: left;background: url(img/1.png) no-repeat 0 0;margin-top: 15px;display: inline;}
+			.header nav{margin-left:11px;float: left;position: relative;}
+			.header nav a{color: #cccccc;display: block;float: left;font-size: 14px;font-family: Arial,Helvetica,sans-serif;line-height: 70px;text-shadow: 0px 1px 0px #1B1B1B;}
+			/*鼠标移入*/
+			/*
+			.header nav .hea:hover{width: 74px;height: 38px;background: url(img/a2-1.gif) no-repeat;	padding: 0;margin: 0;padding-top: 32px;padding-left: 20px;padding-right: 1px;}
+			*/
+			.header nav .hea1:hover{width: 77px;height: 70px;background: url(img/tu1-1.gif) no-repeat;	padding: 0;margin: 0;padding-left: 21px;padding-right: 1px;margin-right:1px;}
+			.header nav .friends:hover{ width: 49px;height: 70px;background: url(img/tu-2.gif) no-repeat;padding: 0;margin: 0;padding-left: 21px;margin-right: -2px;}
+			.header nav span{position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 360px; top:23px;width: 26px;height: 19px;}
+			.hea{width: 79px;padding-left: 21px;position: relative;height:70px}
+			.header .header_span1{width: 14px;height: 9px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 42px;top: 63px;background-position: -28px -10.5px;}
+			.friends{width: 47px;}
+			.faxian{background:  url(img/tu1-1.gif) no-repeat;width: 77px;height: 70px;}
+			.header input{line-height: 29px;color: #9b9b9b;border-radius: 16px;padding-left: 34px;width: 176px;background: #eaeaea;height: 31px;float: left;border: 0;}
+			.header h2{position: relative;width: 176px;line-height: 30px;color: #9b9b9b;margin-top: 22px;margin-left: 165px;border-radius: 16px;float: left;display: inline;}
+			.header h2 span{width: 14px;height:13px;position: absolute;background:  url(img/xuebi-1.gif) no-repeat; left: 13px;top:11px;background-position: -55px 0px;}
+			/*放大镜*/
+			.header p{float: left;margin-left: 48px;margin-top: 34px;color: #787878;width: 47px;height: 13px;position:relative;}
+			.header p span{width: 13px;height: 8px;position: absolute;left: 35px;top: 5px;background: url(img/xuebi-1.gif) no-repeat;background-position: -86px 0;}
+			.section1{height: 35px;background: url(img/sec2-1.jpg) repeat-x;width: 800px;}
+			.section1 nav a{color: #ffffff;float: left;margin-left: 49px;margin-right: 12px;font-family:Arial;}
+			.section1 nav{line-height: 21px;padding-top: 8px;height: 27px;}
+			#yuan{width: 37px;height: 21px;background: #8c0302;display: block;padding-left: 13px;border-radius: 10px;margin-right: 0;margin-left: 44px;display: inline;}
+			/*section1 hover*/
+			.section1 nav a:hover{height: 20px;background: #8c0302;display: block;border-radius: 10px; padding-left: 14px;padding-right: 14px;margin-right: -2px;margin-left: 35px;}
+			.section1 nav .active:hover{height: 21px;background: #8c0302;display: block;padding-left: 13px;border-radius: 10px;margin-left: 72px;margin-right: 0;padding-right: 0;}
+			.section2{height: 336px;position: relative;margin: 0 auto;width: 985px;}
+			.img1{width: 729px;height: 336px;float:left;}
+			.section2 div{width: 254px;height: 336px;position: relative;background: url(img/sec2-3.jpg) no-repeat;float:left;}
+			
+			.section3{width: 730px;background: #ffffff;}
+			.section3 div{color: #666666;}
+			.section3 div a{color: #666666;line-height: 22px;padding-left: 14px;padding-right:14px;border-left: 1px solid #e0cce0;}
+			.section3 div .top{font-size: 20px;color:#333333;padding-left: 34px;border: none;font-family: "微软雅黑";padding-right: 0;}
+			.section3 div .top_1{border-left: none;}
+			.section3 nav{color: #666666;float: left;}
+			.section3 .gengduo{padding-top: 9px;padding-left: 255px;}
+			.section3 .toubu{border-bottom:2px solid #c10d0c;padding-top: 25px;margin-left: 20px;margin-right:20px;padding-bottom: 8px;width: 690px;}
+			.section3 .ul1{margin-left:20px;margin-top: 20px;}
+			.section3 li{width: 140px;float: left;margin-right: 42px;}
+			.section3 .li_1 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_1 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #050505;opacity: 0.4;filter: alpha(opacity:40);}
+			.section3 li span{filter: alpha(opacity:40);}
+			.section3 li strong{color: #CCC;}
+			.section3 .li_1 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_1 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_1 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_1 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_2 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_2 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_2 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_2 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_2 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_2 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			/*分隔*/
+			.section3 .li_3 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_3 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_3 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_3 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_3 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_3 p{font-size: 14px;line-height: 20px;padding-top: 9px;}			
+			.section3 .li_4 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_4 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_4 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_4 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_4 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_4 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_4_bian{margin-right: 23px;}
+			.section3 .li_5{margin-top: 46px;}
+			.section3 .li_5 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_5 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_5 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_5 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_5 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_5 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_6{margin-top: 46px;}	
+			.section3 .li_6 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_6 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_6 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_6 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_6 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_6 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_7{margin-top: 46px;}
+			.section3 .li_7 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_7 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_7 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_7 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_7 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_7 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_8{margin-top: 46px;}
+			.section3 .li_8 div{width: 140px;height: 140px;position: relative;}
+			.section3 .li_8 .span3_1{width: 140px;height: 27px;position: absolute;left:0;top:113px;background: #030303;opacity: 0.4;}
+			.section3 .li_8 .span3_2{width: 15px;height: 11px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 121px;background-position: -122px 0px;}
+			.section3 .li_8 .span3_3{width: 16px;height: 17px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 114px;top: 117px;background-position: -103px 0px;}
+			.section3 .li_8 strong{position: absolute;left: 30px;top: 121px;font-weight: normal;}
+			.section3 .li_8 p{font-size: 14px;line-height: 20px;padding-top: 9px;}
+			.section3 .li_4_bian{margin-right: 23px;}
+			/*section4*/
+			.section4{width: 730px;background: #ffffff;}
+			.section4 div{color: #666666;}
+			.section4 div .top{font-size: 20px;color:#333333;padding-left: 34px;border: none;}
+			.section4 nav{color: #666666;float: left;}
+			.section4 .gengduo{padding-top: 9px;padding-left: 526px;}
+			.section4 .toubu{border-bottom:2px solid #c10d0c;padding-top: 33px;margin-left: 20px;margin-right:20px;padding-bottom: 8px;width: 690px;}
+			.section4 ul{width: 685px;height: 184px;border: 1px solid #d3d3d3;padding: 1px;background: #f5f5f5;margin-left: 20px;margin-top: 20px;}
+			.section4 li{width: 116px;float: left;margin-right: 13px;margin-top: 28px;}
+			.section4 li .tu2{width: 116px;height: 100px;}
+			.section4 li div{width: 105px;height: 12px;}
+			.section4 li p{color: #000000;}
+			.section4 li .p2{line-height: 18px;color: #666666;}
+			.section4 .li2_1{margin-left: 27px;display: inline}
+			.section4 .li2_2{margin-right: 26px;}
+			.section5{width: 100%;padding-bottom: 20px;background: #ffffff;}
+			.section5 div{color: #666666;}
+			.section5 div .top{font-size: 20px;color:#333333;padding-left: 34px;border: none;}
+			.section5 nav{color: #666666;float: left;}
+			.section5 .gengduo{padding-top: 9px;padding-left: 526px;}
+			.section5 .toubu{border-bottom:2px solid #c10d0c;padding-top: 36px;padding-bottom: 8px;width: 690px;margin: 0 auto;}
+			.section5 .zhongbu{width: 717px;height: 472px;border-right: none;padding-bottom: 8px;margin-top: 19px;border-left: 1px solid #e5e5e5;margin-left: 20px;}
+			.section5 ul div img{width: 78px;height: 78px;border: 1px solid #84a8c7;float: left;}
+			.section5 ul div{width: 184px;height: 80px;margin-left: 18px;margin-right: 34px;margin-top: 19px;margin-bottom: 20px;}
+			.section5 ul div p{font-size: 14px;float: left;margin-left: 10px;margin-top: 10px;
+			font-weight: bold;color: #333333;width: 92px;}
+			.section5 ul{width: 226px;border-right: 1px solid #c3c3c3;background: #f5f5f5;padding: 1px;float: left;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;}
+			.section5 ul li{width: 198px;line-height: 32px;padding-left: 28px;float: left;}
+			.section5 ul li .span5_1{color: #c10d0c;}
+			.section5 ul .li5_1{background: #e8e8e8;}
+			.section5 ul .li5_2{text-indent: 115px;}
+			.section5 ul .li5_3{padding-left: 23px;}
+			footer{width: 980px;height: 100px;padding-top: 25px;background: #f9f9f9;margin: 0 auto;}
+			footer .footer_1{width: 223px;height: 54px;line-height: 23px;float: left;}
+			footer .footer_1 p a{color: #9b9b9b;}
+			footer .footer_1 .footerp1 a{color:#666666;}
+			footer .footer_1 p{margin-left: 50px;}
+			footer .footer_2{width: 386px;height: 54px;line-height: 23px;color: #9b9b9b;float: left;margin-left: 79px;}
+			footer .footer_2 p a{color: #9b9b9b;}
+			footer nav{width: 70px;height: 17px;float: left;margin-left: 173px;padding-top: 20px;}
+			footer nav a{color: #9b9b9b;}
+			.left{width: 732px;float: left;height: 1390px;border-left: 1px solid #d3d3d3;padding-bottom: 34px;overflow: hidden;}
+			.right_1{width: 249px;height: 103px;padding: 1px;border-bottom: 1px solid #b1b1b1;background: url(img/right1-1.gif) repeat-x;padding-top: 17px;border-right: 1px solid #d3d3d3;}
+			.right_1 p{line-height: 22px;margin-left: 21px;width: 203px;color: #666666;}
+			.right_1 .right1_p1{margin-left: 76px;margin-top: 16px;}
+			.right_1 .right1_p1 a{color: #FFFFFF;display: inline-block;width: 100px;height: 31px;border-radius: 5px;background: url(img/icopp.png) repeat-x 0px -500px;color: #fff;text-align: center;line-height: 31px;
+}
+			.right1_p1 a:hover{background: url(img/icopp.png) repeat-x 0 -564px;}
+			.right_2{width: 252px;height: 471px;}
+			.right_2 div{width: 211px;height: 11px;margin-top: 20px;padding-bottom: 9px;border-bottom: 1px solid #cccccc;margin-left: 20px;}
+			.right_2 div nav{color: #333333;width: 215px;height: 12px;}
+			.right_2 div nav span{font-weight: bold;}
+			.right_2 div nav a{color: #666666;margin-left: 102px;}
+			.right_2 ul{float: right;margin-right: 20px;margin-top: 6px;display: inline;}
+	/*		.right2_a{display: block;}*/
+			.right_2 ul li{width: 211px;height: 60px;margin-top: 14px;}
+			.right_2 ul li img{width: 62px;height: 62px;display: block;float: left;}
+			.right_2 ul li div{width: 146px;height: 60px;line-height: 30px;border: 1px solid #e9e9e9;margin-left: 61px;padding-bottom: 0;margin-top: 0;}
+			.right_2 ul li div p{color: #666666;padding-left: 15px;}
+			.right_2 ul li div .right_2_p1{color: #333333;font-size: 14px;font-weight: bold;}
+			.right_2 .right2_a{width: 208px;height: 28px;float: left;border: 1px solid #c4c4c4;color: #333333;line-height: 28px;margin-top: 14px;text-indent: 50px;background: url(img/right2-2.gif) repeat-x;border-radius: 4px;margin-left:20px;}
+			.right_3{width: 252px;padding-bottom: 2px;}
+			.right_3 div{margin-top: 34px;padding-bottom: 9px;border-bottom: 1px solid #e9e9e9;margin-left: 20px;color: #333333;width: 211px;height: 12px;}
+			.right_3 div {color: #333333;width: 211px;height: 12px;}
+			.right_3 div a{color: #666666;}
+			.right_3 ul{margin-left: 20px;margin-top: 20px;}
+			.right3_a{display: block;}
+			.right_3 ul li{width: 211px;height: 50px;float: left;}
+			.right_3 ul li img{width: 40px;display: block;float: left;}
+			.right_3 ul li div{width: 146px;height: 50px;line-height: 21px;margin-left: 51px;padding-bottom: 0;margin-top: 0px;border-bottom: none;}
+			.right_3 ul li div p{color: #666666;width: 144px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+			.right_3 ul li .right_3div1{margin-top: 0px;}
+			.section3 div nav .top{position: relative;color: #333333;}
+			.section3 div nav .top span{width: 14px;height: 14px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 9px;top: 6px;background-position: 0 -28px;}
+			.section3 .gengduo{position:relative ;}
+			.section3 .gengduo span{width: 12px;height: 12px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 285px;top: 11px;background-position: -23px -28px;}
+			.section4 .gengduo{position:relative ;}
+			.section4 .gengduo span{width: 12px;height: 12px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 556px;top: 11px;background-position: -23px -28px;}
+			.section4 div nav .top{position: relative;color: #333333;font-family: "微软雅黑";}
+			.section4 div nav .top span{width: 14px;height: 14px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 9px;top: 6px;background-position: 0 -28px;}
+			.section5 .gengduo{position:relative ;}
+			.section5 .gengduo span{width: 12px;height: 12px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 556px;top: 11px;background-position: -23px -28px;}
+			.section5 div nav .top{position: relative;color: #333333;font-family: "微软雅黑";}
+			.section5 div nav .top span{width: 14px;height: 14px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 9px;top: 6px;background-position: 0 -28px;}
+			.section3 .TV p{position: relative;text-indent: 42px;width: 140px;}
+			.section3 .TV p span{width: 35px;height: 15px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 0px;top: 10px;background-position: 0 -65px;}
+			.section4 ul .section4_tu1{width: 8px;height: 14px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left: 10px;top: 73px;background-position: -55px -65px;}
+			.section4 ul .section4_tu2{width: 8px;height: 14px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;right:10px;top: 73px;background-position: -70px -65px;}
+			.section4 ul{position: relative;}
+			.section4 li .tu2{position: relative;}
+			.section4 li .tu2 span{width: 16px;height: 99px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;right:0px;top: 2px;background-position: -85px -65px;}
+			.section5 ul div .section5_tu1{width: 24px;height: 23px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:90px;top: 35px;background-position: -139px 0px;}
+			.section5 ul div .section5_tu2{width: 20px;height: 19px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:123px;top: 37px;background-position: -165px 0px;}
+			.section5 ul div{position: relative;}
+			.right_3 ul li div p{position: relative;}
+			.right_3 ul li div p .right3_tu1{width: 11px;height: 12px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:26px;top: 4px;background-position: 0px -161px;}
+			.right_3 ul li div .right_3_p1 .right3_tu1{width: 11px;height: 12px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:38px;top: 4px;background-position: 0px -161px;}
+			footer .footer_1{position: relative;}
+			footer .footer_1 span{width: 46px;height: 44px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:0px;top: 0px;background-position: -120px -65px;}
+			footer nav{position: relative;}
+			footer nav span{width: 17px;height: 16px;position: absolute;background: url(img/xuebi-1.gif) no-repeat;left:-22px;top: 20px;background-position: -170px -65px;}
+			footer nav{position: relative;}
+			.centerclear{width: 990px;margin: 0 auto;}
+			.right{width: 250px;float: left;border-left: 1px solid #d4d4d4;border-right: 1px solid #d4d4d4;padding-bottom: 485px;overflow: hidden;}
+			.zhensection2{width: 100%;background: #f0ede6;position: relative;overflow: hidden;}
+			.zhenheader{width: 100%;background: url(img/未标题-1.jpg) repeat-x;position: relative;}
+			.zhensection1{width: 100%;background: transparent url("img/sec2-1.jpg") repeat-x scroll 0% 0%}
+			.section1{width: 674px;margin: 0 auto;}
+			.zhencenter{width: 100%;background: #f5f5f5;}
+			.zhenfooter{width: 100%;background: #F9F9F9 none repeat scroll 0% 0%;border-top: 1px solid #D5D5D5;}
+			.right{background: #FFFFFF;}
+			.section5{padding-bottom: 50px;}
+			.section3 li p a{color: #000000;}
+			.section4 li p a{color: #000;}
+			.section4 li .p2 a{color: #666;}
+			.section5 ul li a{color: #000;font-size: 14px;}
+			html {overflow-y: scroll;}
+			/*html{overflow:-Scroll;overflow-x:hidden}*/
+			.right_2 ul li div .right_2_p1 a{color: #333;}
+			.right_2 ul li div p a{color: #666;}
+			.jiantou1 span{width: 18px;height: 36px;position: absolute;background:url(img/xuebi-1.gif) no-repeat;left: -51px;top: 149px;background-position: 0 -89px;}
+			.jiantou2 span{width: 18px;height: 36px;position: absolute;background:url(img/xuebi-1.gif) no-repeat;left: 285px;top: 149px;background-position: -43px -89px;}
+			.jiantou1 span:hover{background-color:rgba(0,0,0,.5);
+filter: alpha(opacity:40);width: 22px;height: 37px;}
+            .jiantou2 span:hover{background-color:rgba(0,0,0,.5);
+filter: alpha(opacity:40);width: 22px;height: 37px;}
+              .section2 div .hover1{width: 215px;height: 56px;position: absolute;left:19px;top:213px;background: url(img/btndown1.png);}
+            .section2 div .hover1:hover{background: url(img/btndown2.png);
+position: absolute;width: 215px;height: 56px;left: 19px;top: 213px;}
+          
+            .section3 .span3_3:hover{background: url(img/topbar.png) -60px -406px;
+}
+            .section5 ul div .section5_tu1:hover{background: url(img/topbar.png) -16px -346px;}
+            .section5 ul div .section5_tu2:hover{background: url(img/topbar.png) -42px -346px;}
+            .mico1{right:63px;top:7px;width:17px;height:17px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -64px -346px;}
+            .mico2{right: 40px;top: 9px;width: 14px;height: 14px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -82px -346px;}
+            .mico3{right: 14px;top: 9px;width: 16px;height:14px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -96px -346px;}
+            .mico1:hover{right: 14px;top: 9px;width: 16px;height:14px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -96px -346px;}
+            .mico2:hover{right:63px;top:7px;width:17px;height:17px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -64px -346px;}
+            .mico3:hover{right: 40px;top: 9px;width: 14px;height: 14px;position: absolute;background: url(img/topbar.png) no-repeat;background-position: -82px -346px;}
+           .section5 ul .li5_1:hover .mico1{display: block;}
+           .section5 ul .li5_1:hover .mico2{display: block;}
+           .section5 ul .li5_1:hover .mico3{display: block;}
+           .section5 ul .li5_1{position: relative;}
+               
+		</style>
+	</head>
+	<body>
+		   <section class="zhenheader">
+			<header class="header clearFix">
+				<div></div>
+				<nav class="clearFix"> 
+					<a href="#" class="hea faxian">发现音乐
+					<span class="header_span1"></span>
+				</a>
+				<a href="#" class="hea hea1">我的音乐</a><a href="#" class="hea friends">朋友</a><a href="#" class="hea hea1">下载客户端</a>
+				<span></span>
+				</nav>
+				<h2 class="clearFix">
+				<input type="text" value="单曲/歌手/专辑/歌单/用户" name="danqu" />
+				<section>
+				<span></span>
+				</section>
+				</h2>
+				<p>登录
+					<a href="#">
+				<span></span>
+				</a>
+				</p>
+			</header>
+			</section>
+			<section class="zhensection1">
+			<section class="section1">
+				<nav> <a href="#" id="yuan" class="active">推荐</a><a href="#">排行榜</a><a href="#">歌单</a><a href="#">主播电台</a><a href="#">歌手</a><a href="#">新碟上架</a></nav>
+			</section>
+			</section>
+			<section class="zhensection2">
+			<section class="section2 clearFix">
+				<img src="img/222-1.png" /class="img1">
+					<a href="#" class="jiantou1">
+						<span></span>
+					</a>
+				<div>
+					<a href="#" class="jiantou2">
+						<span></span>
+					</a>
+					<a href="#" class="hover1">
+						
+					</a>
+				</div>
+			</section>
+			</section>
+			<section class="zhencenter">
+			<section class="centerclear clearFix">
+			<section class="left">
+			<section class="section3">
+				<div class="toubu clearFix">
+					<nav><a href="#" class="top">热门推荐
+					<span></span>
+					</a><a href="#" class="top_1">华语</a><a href="#">流行</a><a href="#">摇滚</a><a href="#">民谣</a><a href="#">电子</a></nav>
+					<nav class="gengduo">
+					更多
+					<span></span>
+					</nav>
+				</div>
+				<ul class="ul1 clearFix">
+					<li class="li_1">
+						<div>
+							<img src="img/a3_8.jpg"/>
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>11万</strong>
+						</div>
+						<p>
+							<a href="#" target="_self">
+							在每个人的心里，都住着一个熊孩子（民谣）
+							</a>
+						</p>
+					</li>
+					<li class="li_2">
+						<div>
+							<img src="img/a3_1.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>16万</strong>
+						</div>
+						
+						<p>
+							<a href="#" target="_self">
+							春运路上　要塞神马进耳朵
+							</a>
+						</p>
+					</li>
+					<li class="li_3">
+						<div>
+							<img src="img/1415071465245836.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>118万</strong>
+						</div>
+						<p>
+							<a href="#" target="_self">
+							百位世界顶级配乐大师，两百首经典代表作
+							</a>
+						</p>
+					</li>
+					<li class="li_4 li_4_bian TV">
+						<div>
+							<img src="img/a3_2.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>19212</strong>
+						</div>
+						<p>
+							<span></span>
+							<a href="#" target="_self">
+							88届奥斯卡提名的最佳原创歌曲
+							</a>
+						</p>
+					</li>
+					<li class="li_5">
+						<div>
+							<img src="img/a3_3.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>66万</strong>
+						</div>
+						<p>
+							<a href="#" target="_self">
+							loli控？其实你还可以是幼女控。。。
+							</a>
+						</p>
+					</li>
+					<li class="li_6 TV">
+						<div>
+							<img src="img/a3_5.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>19814</strong>
+						</div>
+						<p>
+							<span></span>
+							<a href="#" target="_self">
+							探戈，孤独者的三分钟爱情
+							</a>
+						</p>
+					</li>
+					<li class="li_7">
+						<div>
+							<img src="img/a3_6.jpg"/>
+							<span class="span3_1"></span>
+						<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>191万</strong>
+						</div>
+						<p>
+							<a href="#" target="_self">
+							电影里的"神插入"歌曲
+							</a>
+						</p>
+					</li>
+					<li class="li_8 li_4_bian TV">
+						<div>
+							<img src="img/a3_7.jpg" />
+							<span class="span3_1"></span>
+							<a href="#" target="_blank">
+							<span class="span3_2"></span>
+							</a>
+							<a href="#" target="_blank">
+							<span class="span3_3"></span>
+							</a>
+							<strong>54007</strong>
+						</div>
+						<p>
+							<span></span>
+							<a href="#" target="_self">
+							【3D环绕】逆
+						天的大提琴节奏
+						2CELLOS
+						</a>
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="section4">
+				<div class="toubu clearFix">
+					<nav><a href="#" class="top">新碟上架
+				    <span></span>
+					</a>
+					</nav>
+					<nav class="gengduo">更多
+					<a href="#" target="_blank">
+					<span></span>
+					</a>
+					</nav>
+				</div>
+				<ul>
+					<a href="#" target="_blank">
+					<span class="section4_tu1"></span>
+					</a>
+					<a href="#" target="_blank">
+					<span class="section4_tu2"></span>
+					</a>
+					<li class="li2_1">
+						<div class="tu2">
+							<a href="#">
+								<img src="img/1426066581495715.jpg" />
+							</a>
+							<span></span>
+						</div>
+						<div></div>
+						<p>
+							<a href="#" target="_blank">
+							我是歌手第四季…
+							</a>
+						</p>
+						<p class="p2">
+							<a href="#" target="_blank">
+							群星
+							</a>
+						</p>
+					</li>
+					<li>
+						<div class="tu2">
+							<a href="#">
+								<img src="img/a4_1.jpg" />
+							</a>
+							<span></span>
+						</div>
+						<div></div>
+						<p>
+							<a href="#" target="_blank">
+							Night　Thoughts
+							</a>
+						</p>
+						<p class="p2">
+							<a href="#" target="_blank">
+							Suede
+							</a>
+						</p>
+					</li>
+					<li>
+						<div class="tu2">
+							<a href="#">
+								<img src="img/a4_2.jpg" />
+							</a>
+							<span></span>
+							<div></div>
+							<p>
+								<a href="#" target="_blank">
+								天冷就回来2016
+								</a>
+							</p>
+							<p class="p2">
+								<a href="#" target="_blank">
+								陈洁仪
+								</a>
+							</p>
+					</li>
+					<li>
+						<div class="tu2">
+							<a href="#">
+								<img src="img/a4_3.jpg" />
+							</a>
+							<span></span>
+							<div></div>
+							<p>
+								<a href="#" target="_blank">
+								大苏打
+								</a>
+							</p>
+							<p class="p2">
+								<a href="#" target="_blank">
+								VA
+								</a>
+							</p>
+					</li>
+					<li class="li2_4">
+						<div class="tu2">
+							<a href="#">
+								<img src="img/a4_4.jpg" />
+							</a>
+							<span></span>
+							<div></div>
+							<p>
+								<a href="#" target="_blank">
+								不如怀念
+								</a>
+							</p>
+							<p class="p2">
+								<a href="#" target="_blank">
+								陈楚生
+								</a>
+							</p>
+					</li>
+				</ul>
+			</section>
+			<section class="section5">
+				<div class="toubu clearFix">
+					<nav><a href="#" class="top">新碟上架
+					<span></span>
+					</a></nav>
+					<nav class="gengduo">更多
+					<a href="#" target="_blank">
+					<span></span>
+					</a>
+					</nav>
+				</div>
+				<div class="zhongbu">
+					<ul class="clearFix">
+						<div class="clearFix">
+							<img src="img/sec4-1.jpg" />
+							<p>云音乐飙升榜</p>
+							<a href="#">
+								<section>
+								<span class="section5_tu1"></span>
+								</section>
+							</a>
+							<a href="#"><span class="section5_tu2"></span></a>
+						</div>
+						<li class="li5_1"><span class="span5_1">1</span>　
+							<a href="#" target="_self">
+							修炼爱情
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li><span class="span5_1">2</span>　
+							<a href="#" target="_self">
+							失落沙洲
+							</a>
+						</li>
+						<li class="li5_1"><span class="span5_1">3</span>　
+							<a href="#" target="_self">
+							从开始到现在
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>4　
+							<a href="#" target="_self">
+							那个人
+							</a>
+						</li>
+						<li class="li5_1">5　
+							<a href="#" target="_self">
+							迷失北京
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>6　
+							<a href="#" target="_self">
+							人质
+							</a>
+						</li>
+						<li class="li5_1">7　
+							<a href="#" target="_self">
+							你给我的　不插电
+							</a>
+						</li>
+						<li>8　
+					        <a href="#" target="_self">
+							你
+							</a>
+						</li>
+						<li class="li5_1">9　
+						<a href="#" target="_self">
+							好想你
+						</a>
+						</li>
+						<li class="li5_3">10　
+							<a href="#" target="_self">
+							爱之初体验
+							</a>
+						</li>
+						<li class="li5_1 li5_2">
+							<a href="#" target="_self">
+							查看全部>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<div>
+							<img src="img/a5_1.jpg" //>
+							<p>云音乐飙升榜</p>
+							<a href="#">
+								<section>
+								<span class="section5_tu1"></span>
+								</section>
+							</a>
+							<a href="#"><span class="section5_tu2"></span></a>
+						</div>
+						<li class="li5_1"><span class="span5_1">1</span>　
+							<a href="#" target="_self">
+							修炼爱情
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li><span class="span5_1">2</span>
+							<a href="#" target="_self">　失落沙洲
+							</a>
+						</li>
+						<li class="li5_1"><span class="span5_1">3</span>　
+							<a href="#" target="_self">
+							从开始到现在
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>4　
+							<a href="#" target="_self">
+							那个人
+							</a>
+						</li>
+						<li class="li5_1">5　
+							<a href="#" target="_self">
+							迷失北京
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>6　
+							<a href="#" target="_self">
+							人质
+							</a>
+						</li>
+						<li class="li5_1">7　
+							<a href="#" target="_self">
+							你给我的　不插电
+							</a>
+						</li>
+						<li>8　
+							<a href="#" target="_self">
+							你
+							</a>
+						</li>
+						<li class="li5_1">9　
+							<a href="#" target="_self">
+							好想你
+							</a>
+						</li>
+						<li class="li5_3">10
+						<a href="#" target="_self">　爱之初体验
+						</a>
+						</li>
+						<li class="li5_1 li5_2">
+							<a href="#" target="_self">
+							查看全部>
+							</a>
+						</li>
+					</ul>
+					<ul>
+						<div>
+							<img src="img/a5_2.jpg" />
+							<p>云音乐飙升榜</p>
+							<a href="#">
+								<section>
+								<span class="section5_tu1"></span>
+								</section>
+							</a>
+							<a href="#"><span class="section5_tu2"></span></a>
+						</div>
+						<li class="li5_1"><span class="span5_1">1</span>
+							<a href="#" target="_self">　修炼爱情
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li><span class="span5_1">2</span>　
+							<a href="#" target="_self">
+							失落沙洲
+							</a>
+						</li>
+						<li class="li5_1"><span class="span5_1">3</span>　
+							<a href="#" target="_self">
+							从开始到现在
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>4　
+							<a href="#" target="_self">
+							那个人
+							</a>
+						</li>
+						<li class="li5_1">5　
+							<a href="#" target="_self">
+							迷失北京
+							</a>
+							<span href="#" class="mico1"></span>
+							<span href="#" class="mico2"></span>
+							<span href="#" class="mico3"></span>
+						</li>
+						<li>6　
+							<a href="#" target="_self">
+							人质
+							</a>
+						</li>
+						<li class="li5_1">7　
+							<a href="#" target="_self">
+							你给我的　不插电
+							</a>
+						</li>
+						<li>8　
+							<a href="#" target="_self">
+							你
+							</a>
+						</li>
+						<li class="li5_1">9　
+							<a href="#" target="_self">
+							好想你
+							</a>
+						</li>
+						<li class="li5_3">10　
+							<a href="#" target="_self">
+							爱之初体验
+							</a>
+						</li>
+						<li class="li5_1 li5_2">
+							<a href="#" target="_self">
+							查看全部>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			</section>
+		    <section class="right clearFix">
+			<section class="right_1 clearFix">
+				<p>登录网易云音乐,可以享受无限收藏的乐趣,并且无限同步到手机</p>
+				<p class="right1_p1"><a href="#">用户登录</a></p>
+			</section>
+			<section class="right_2 clearFix">
+				<div>
+					<nav>
+					<span>入驻歌手</span>
+					<a href="#">查看全部></a>
+					</nav>
+				</div>
+				<ul>
+					<li>
+						<img src="img/right2-1.gif"/>
+						<div>
+						<p class="right_2_p1">
+						<a href="#" target="_blank">	
+							张惠妹aMEI
+						</a>
+						</p>
+						<p>
+						<a href="#" target="_blank">
+							台湾歌手张惠妹
+						</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r_1.jpg"/>
+						<div>
+						<p class="right_2_p1">
+							<a href="#" target="_blank">
+							尚雯婕
+							</a>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							原创电子唱作人
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r_2.jpg"/>
+						<div>
+						<p class="right_2_p1">
+							<a href="#" target="_blank">
+							羽泉组合
+							</a>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							国内知名演唱组合 羽泉
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r_3.jpg"/>
+						<div>
+						<p class="right_2_p1">
+							<a href="#" target="_blank">
+							李志
+							</a>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							个体音乐人李志
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r_4.jpg"/>
+						<div>
+						<p class="right_2_p1">
+							<a href="#" target="_blank">
+							马頔麻油叶
+							</a>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							民谣音乐人
+							</a>
+						</p>
+						</div>
+					</li>
+				</ul>
+				<a href="#" class="right2_a">
+					申请成为网易音乐人</a>
+			</section>
+			<section class="right_3">
+				<div>
+					<a href="#">热门DJ</a>
+				</div>
+				<ul>
+					<li>
+						<img src="img/right3-1.gif"/>
+						<div class="right_3div1">
+						<p>
+							<a href="#" target="_blank">
+							灵伟
+							</a>
+							<span class="right3_tu1"></span>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							电台DJ、资深乐评人。
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r2_1.jpg"/>
+						<div>
+						<p>
+							<a href="#" target="_blank">
+							庞舸
+							</a>
+						<span class="right3_tu1"></span>	
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							深圳电台飞扬971主持人
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r2_2.jpg"/>
+						<div>
+						<p>
+							<a href="#" target="_blank">
+							林海
+							</a>
+							<span class="right3_tu1"></span>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							著名音乐节目主持人
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r2_3.jpg"/>
+						<div>
+						<p class="right_3_p1">
+							<a href="#" target="_blank">
+							阿鹏叔
+							</a>
+							<span class="right3_tu1"></span>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							桒惪SOUND创办人
+							</a>
+						</p>
+						</div>
+					</li>
+					<li>
+						<img src="img/r2_4.jpg"/>
+						<div>
+						<p class="right_3_p1">
+							<a href="#" target="_blank">
+							DJ晓苏
+							</a>
+							<span class="right3_tu1"></span>
+						</p>
+						<p>
+							<a href="#" target="_blank">
+							独立DJ，CRI环球旅游广播
+							</a>
+						</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			</section>
+			</section>
+			</section>
+			<section class="zhenfooter">
+			<footer>
+				<div class="footer_1">
+					<span></span>
+					<p class="footerp1"><a href="#">独立音乐人招募计划</a></p>
+					<p><a href="#">加入我们　即将与超过亿万粉丝迷互动</a></p>
+				</div>
+				<div class="footer_2">
+					<p><a href="#">关于网易</a>-<a href="#">客户服务</a>-<a href="#">服务条款</a>-<a href="#">网站导航</a>　网易公司版权所有©1997-2016 </p>
+					<p>网络文化经营许可证：<a href="#">浙网文[2013]0332-034号</a></p>
+				</div>
+				<nav>
+					<a href="#">
+				<span></span>
+				意见反馈	
+				</a>
+				</nav>
+			</footer>
+			</section>
+	</body>
+
+</html>

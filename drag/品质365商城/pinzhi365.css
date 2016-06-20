@@ -1,0 +1,760 @@
+
+		    li{  list-style:none;}
+			a{ text-decoration:none;}
+			img{border:none; vertical-align:top;}
+		    body,h1,h2,ul,h3,form,ul,p,input,li,select,textarea,button,dl,dd{margin:0;padding:0; font-family:"microsoft yahei"; font-size:12px;}
+		    dd{margin: 0;}
+			.clearFix:after{content:"";display:block;clear:both;}
+			.hui {
+				background-color: #f2f2f2;
+				line-height: 25px;
+				height: 25px;
+				overflow: hidden;
+			}
+			
+			.hello {
+				float: right;
+				width: 437px;
+				padding-right: 80px;
+				position: relative;
+			}
+			
+			.hello a {
+				color: #666666;
+				padding-left: 15px;
+				font-family: "microsoft yahei";
+			}
+			
+			.row2 a:hover {
+				color: red;
+			}
+			
+			.allshop ul li a:hover {
+				color: #ef363e;
+			}
+			
+			.spring dd:hover {
+				background-color: pink;
+				color: red;
+			}
+			
+			.spring .li_3 a:hover {
+				color: #ef363e;
+			}
+			
+			.sanjiao {
+				width: 15px;
+				height: 15px;
+				background: url(img/icons.png) no-repeat 0 -162px;
+				position: absolute;
+				left: 361px;
+				top: 5px;
+			}
+			
+			.weibo {
+				width: 16px;
+				height: 15px;
+				background: url(img/icons.png) no-repeat 0 -180px;
+				position: absolute;
+				left: 399px;
+				top: 5px;
+			}
+			
+			.weixin {
+				width: 16px;
+				height: 15px;
+				background: url(img/icons.png) no-repeat 0 -200px;
+				position: absolute;
+				left: 429px;
+				top: 5px;
+			}
+			
+			.hello .tanhao {
+				padding-left: 0px;
+			}
+			
+			.hello .denglu {
+				padding: 0;
+			}
+			
+			.hello .zhuce {
+				padding: 0;
+			}
+			
+			.hello .denglu span {
+				padding: 0 5px;
+			}
+			
+			.hello a {
+				display: block;
+				float: left;
+			}
+			
+			.zhenlogo {
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.logo {
+				width: 452px;
+				margin: 0 auto;
+				padding: 35px 0;
+				color: #959595;
+			}
+			
+			.logo h1 {
+				background: url(img/logo.jpg) no-repeat 0 0;
+				position: absolute;
+				left: 67px;
+				top: 20px;
+				width: 220px;
+				height: 80px;
+			}
+			
+			.logo ul .row1 input {
+				display: block;
+				width: 449px;
+				line-height: 34px;
+				height: 30px;
+				border: 2px solid #ef363e;
+				text-indent: 5px;
+				color: #959595;
+				padding: 0;
+			}
+			
+			.logo ul .row1 {
+				position: relative
+			}
+			
+			.row1 button {
+				width: 82px;
+				height: 34px;
+				position: absolute;
+				right: -82px;
+				top: 0;
+				background-color: #ef363e;
+				border: 0;
+				font-size: 16px;
+				color: #ffffff;
+			}
+			
+			.row2 {
+				padding-top: 5px;
+			}
+			
+			.row2 a {
+				color: #959595;
+				display: block;
+				float: left;
+				padding-right: 10px;
+			}
+			
+			.row2 .search {
+				padding-right: 0;
+			}
+			
+			.allshop ul li {
+				float: left;
+				padding-right: 40px;
+				font-size: 16px;
+				line-height: 35px;
+			}
+			
+			.allshop ul li a {
+				color: #333333;
+				font-size: 16px;
+			}
+			
+			.allshop .shoping {
+				padding-left: 67px;
+				width: 210px;
+				padding-right: 0;
+			}
+			
+			.allshop .shoping span {
+				line-height: 35px;
+				padding-left: 30px;
+				background-color: #ef363e;
+				display: block;
+				color: #FFFFFF;
+			}
+			
+			.allshop .home_page {
+				padding-left: 25px;
+			}
+			
+			.allshop .home_page a {
+				color: #ef363e;
+			}
+			
+			.allshop .flagship {
+				padding-right: 31px;
+			}
+			
+			.spring {
+				position: relative;
+			}
+			
+			.spring img {
+				width: 1343px;
+				height: 470px;
+			}
+			
+			.spring dd {
+				margin: 0 0 0 0px;
+				font-size: 14px;
+				position: relative;
+				line-height: 39px;
+				text-indent: 50px;
+			}
+			
+			.spring .spring1_1 {
+				position: absolute;
+				left: 25px;
+				top: 10px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -9px -486px;
+				width: 13px;
+				height: 18px;
+			}
+			
+			.spring .spring1_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring dl {
+				width: 210px;
+				position: absolute;
+				left: 67px;
+				top: 0;
+				background-color: #FFFFFF;
+				height: 470px;
+			}
+			
+			.spring .spring2_1 {
+				position: absolute;
+				left: 23px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -458px;
+				width: 19px;
+				height: 14px;
+			}
+			
+			.spring .spring2_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring3_1 {
+				position: absolute;
+				left: 28px;
+				top: 8px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -12px -394px;
+				width: 7px;
+				height: 24px;
+			}
+			
+			.spring .spring3_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring4_1 {
+				position: absolute;
+				left: 23px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -7px -249px;
+				width: 17px;
+				height: 14px;
+			}
+			
+			.spring .spring4_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring5_1 {
+				position: absolute;
+				left: 22px;
+				top: 10px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -277px;
+				width: 18px;
+				height: 16px;
+			}
+			
+			.spring .spring5_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring6_1 {
+				position: absolute;
+				left: 23px;
+				top: 10px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -217px;
+				width: 16px;
+				height: 17px;
+			}
+			
+			.spring .spring6_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring7_1 {
+				position: absolute;
+				left: 23px;
+				top: 10px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -336px;
+				width: 17px;
+				height: 18px;
+			}
+			
+			.spring .spring7_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring8_1 {
+				position: absolute;
+				left: 23px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -369px;
+				width: 18px;
+				height: 13px;
+			}
+			
+			.spring .spring8_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring9_1 {
+				position: absolute;
+				left: 23px;
+				top: 11px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -426px;
+				width: 18px;
+				height: 18px;
+			}
+			
+			.spring .spring9_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring10_1 {
+				position: absolute;
+				left: 23px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -309px;
+				width: 19px;
+				height: 15px;
+			}
+			
+			.spring .spring10_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring11_1 {
+				position: absolute;
+				left: 23px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -518px;
+				width: 17px;
+				height: 17px;
+			}
+			
+			.spring .spring11_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring .spring12_1 {
+				position: absolute;
+				left: 22px;
+				top: 12px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -6px -188px;
+				width: 17px;
+				height: 15px;
+			}
+			
+			.spring .spring12_2 {
+				position: absolute;
+				left: 191px;
+				top: 16px;
+				background: url(img/icon_sitebar_2015.png) no-repeat -11px -552px;
+				width: 6px;
+				height: 7px;
+			}
+			
+			.spring ul {
+				width: 210px;
+				height: 470px;
+				position: absolute;
+				background-color: #fee9cf;
+				right: 66px;
+				top: 0;
+			}
+			
+			.spring li {
+				text-indent: 15px;
+				line-height: 18px;
+			}
+			
+			.spring .li_1 {
+				color: #000;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 29px;
+				margin-top: 6px;
+			}
+			
+			.spring .li_2 {
+				color: #ef353d;
+				line-height: 29px;
+				padding-bottom: 6px;
+				border-bottom: 2px solid #fd8e09;
+				padding-left: 132px;
+			}
+			
+			.spring .li_3 {
+				height: 53px;
+				padding-bottom: 15px;
+				border-bottom: 2px solid #fd8e09;
+				position: relative;
+			}
+			
+			.spring .li_3 a {
+				display: block;
+				float: left;
+				margin-top: 43px;
+				margin-right: 28px;
+				text-indent: 0;
+				color: #000000;
+			}
+			
+			.spring li .huafei {
+				text-indent: 15px;
+			}
+			
+			.spring li .baoxian {
+				margin-right: 15px;
+			}
+			
+			.spring .li_3 .span_1 {
+				position: absolute;
+				background: url(img/icon_added_services.png) no-repeat 0px 0;
+				position: absolute;
+				left: 15px;
+				top: 12px;
+				width: 20px;
+				height: 21px;
+			}
+			
+			.spring .li_3 .span_2 {
+				position: absolute;
+				background: url(img/icon_added_services.png) no-repeat 0px -22px;
+				position: absolute;
+				left: 68px;
+				top: 12px;
+				width: 24px;
+				height: 21px;
+			}
+			
+			.spring .li_3 .span_3 {
+				position: absolute;
+				background: url(img/icon_added_services.png) no-repeat 0px -44px;
+				position: absolute;
+				left: 121px;
+				top: 12px;
+				width: 23px;
+				height: 22px;
+			}
+			
+			.spring .li_3 .span_4 {
+				position: absolute;
+				background: url(img/icon_added_services.png) no-repeat 0px -67px;
+				position: absolute;
+				left: 174px;
+				top: 12px;
+				width: 24px;
+				height: 21px;
+			}
+			
+			.spring li img {
+				width: 174px;
+				height: 174px;
+				padding: 17px;
+			}
+			
+			.spring .jianeng {
+				text-align: center;
+			}
+			
+			.spring .jianeng a {
+				color: #000000;
+			}
+			
+			.spring .small {
+				text-align: center;
+			}
+			
+			.spring .small a {
+				color: #000000;
+			}
+			
+			.zhenTop_brand {
+				text-indent: 66px;
+				background-color: #f5f5f5;
+				padding-bottom: 27px;
+			}
+			
+			.Top_brand h2 {
+				line-height: 37px;
+				padding-top: 18px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.Top_brand h2 span {
+				color: #8a8a8a;
+			}
+			
+			.Brand_recommendation {
+				margin: 0 auto;
+				width: 1210px;
+			}
+			
+			.Brand_recommendation .ul_1 li {
+				width: 123px;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+			}
+			
+			.Brand_recommendation .ul_1 li:hover {
+				background-color: black;
+			}
+			
+			.Brand_recommendation .ul_1 li a:hover {
+				color: #FFFFFF;
+				width: 123PX;
+				height: 80PX;
+			}
+			
+			.Brand_recommendation .ul_1 li a {
+				font-size: 18px;
+				color: #000000;
+				width: 123PX;
+				height: 80PX;
+				display: block;
+			}
+			
+			.Brand_recommendation ul {
+				width: 123px;
+				background-color: #FFFFFF;
+				float: left;
+				text-indent: 0;
+				border-right: 1px solid #f5f5f5;
+			}
+			
+			.Brand_recommendation ul li {
+				border-bottom: 1px solid #f5f5f5;
+				width: 123px;
+				height: 80px;
+			}
+			
+			.Brand_recommendation .ul_2 {
+				width: 209px;
+				height: 324px;
+				border-right: none;
+				padding: 0;
+				margin: 0;
+				position: relative;
+			}
+			
+			.Brand_recommendation .ul_2 img {
+				width: 206px;
+				height: 322px;
+				padding: 1px;
+			}
+			
+			.Brand_recommendation .ul_2 div {
+				position: absolute;
+				width: 207px;
+				height: 55px;
+				position: absolute;
+				left: 0;
+				top: 268.5px;
+				background-color: #2f3331;
+			}
+			
+			.Brand_recommendation .ul_2 h2 {
+				font-size: 14px;
+				color: #ffffff;
+				line-height: 18px;
+				margin-top: 8px;
+				text-align: center;
+				padding-top: 0;
+			}
+			
+			.Brand_recommendation .ul_2 p {
+				color: #818583;
+				text-align: center;
+			}
+			
+			.zhenmust_check {
+				padding-bottom: 50px;
+			}
+			
+			.must_check h3 {
+				line-height: 90px;
+				font-size: 25px;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.must_check h3 span {
+				color: #8a8a8a;
+			}
+			
+			.must_check div img {
+				width: 1210px;
+				height: 328px;
+			}
+			
+			.must_check div {
+				text-align: center;
+			}
+			
+			.baoli img {
+				width: 1210px;
+				height: 90px;
+			}
+			
+			.baoli {
+				text-align: center;
+				padding-top: 35px;
+				background-color: #f5f5f5;
+				padding-bottom: 14px;
+			}
+			
+			.erdun {
+				padding-bottom: 39px;
+				text-align: center;
+				background-color: #f5f5f5;
+				border-bottom: 1px solid #c8c8c8;
+			}
+			
+			.erdun img {
+				width: 1210px;
+				height: 90px;
+			}
+			
+			footer section {
+				height: 190px;
+				width: 905px;
+				margin: 0 auto;
+				margin-top: 43px;
+				border-bottom: 1px solid #efefef;
+			}
+			
+			footer section ul {
+				float: left;
+				margin-right: 71px;
+			}
+			
+			footer section li a {
+				color: #757575;
+			}
+			
+			footer section .tittle {
+				font-size: 16px;
+				color: #696969;
+				font-weight: bold;
+			}
+			
+			footer section li {
+				line-height: 21px;
+			}
+			
+			footer section .tittle1 {
+				margin-top: 10px;
+			}
+			
+			footer div {
+				width: 450px;
+				margin: 0 auto;
+			}
+			
+			footer div nav {
+				margin-top: 48px;
+			}
+			
+			footer div a {
+				color: #6a6a6a;
+				display: block;
+				text-align: center;
+				line-height: 18px;
+			}
+			
+			footer div p a {
+				display: inline;
+				margin-right: 23px;
+				margin-left: 64px;
+			}
+			
+			footer div p {
+				margin-top: 30px;
+			}
+			
+			footer {
+				width: 1300px;
+				margin: 0 auto;
+			}
