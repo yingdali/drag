@@ -10,15 +10,17 @@
 .Brand_recommendation ul li img {
 	width: 123px;
 	height: 80px;
-	/*transition: .2s;*/
+	transition: .2s;
 }
-
+.category-sub{
+	display: none;
+}
 .Brand_recommendation ul li img:hover {
 	transform: scale(1.05);
 }
 
 .zhenA1F div .top img {
-/*	transition: .2s;*/
+transition: .2s;
 }
 
 .zhenA1F div .top img:hover {
@@ -79,11 +81,7 @@
 	height: 431px;
 	float: left;
 }
-/*.picture{
-	width: 1011px;
-	height: 430px;
-	padding-left: 197px;
-}*/
+
 .zhenA1F div {
 	width: 1210px;
 	height: 431px;
@@ -181,11 +179,11 @@
 }
 .zhenA1F div ul .bottom img {
 	width: 202px;
-/*	transition: .2s;*/
+	transition: .2s;
 }
 .zhenA1F div .bottom img {
 	width: 202px;
-/*	transition: .2s;*/
+	transition: .2s;
 }
 .zhenA1F div .ul2_1 {
 	width: 202px;
@@ -294,12 +292,6 @@
 	-webkit-transform: translate(-0px,0px);
 	transition: opacity 1s ease-in-out 0.5s,transform 1s ease-in-out; 
 }
-/*footer .show{
-	
-}
-footer section:hover{
-	 animation: cooperate 1s cubic-bezier(0, 0, 0.71, 1.17) .2s both;
-}
    */
   /*楼层定位*/
 .g-elevator{display:none;position:fixed;_position:absolute;width:30px;left:50%;top:50%;z-index:10;margin-left:-640px;opacity: 0;}
@@ -394,4 +386,7 @@ footer section:hover{
     border-radius: 50%;
     margin: 5px auto 0;
     background-color: #ef353d;
+}
+.category-advs img{
+	padding: 10px;
 }

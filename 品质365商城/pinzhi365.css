@@ -832,6 +832,9 @@
 			.lunbo .showw{
 				display: block;
 			}
+			.lunbo{
+				z-index: 20;
+			}
 			.category-sub{
 			    min-height: 460px;
 			    background-color: rgba(255,255,255,0.9);
@@ -919,24 +922,8 @@
 						.category-sub-12{
 				top:-469px;
 			}
-
-
-/*.logo h1:hover{
-	-webkit-transform: translate(0px,-0px);
-	opacity: 1;
-}*/
-
 .zhenA1F div .li1_1 .color1 a {
 	    color: #8a9301;
 }
-/*h2{
-	opacity: 0;
-	-webkit-transform: translate(-90px,-90px);
-	transition: opacity 1s ease-in 0.5s,transform 1s ease-in; 
-}*/
-/*
-.zhenA1F header.activem{
-	-webkit-transform: translate(0px,-0px);
-	     opacity: 1;
-}*/
+
 

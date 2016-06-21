@@ -167,11 +167,16 @@ huan();
        	var a1=$('.txt');
        $(window).bind('scroll',function(){
        	var top=$(this).scrollTop();//当前窗口的滚动距离
+       	console.log(top)
        	var po=$('.p-price1')[0];
+       	var zz=$('.g-elevator');
        	if(top>1000){
        	$('.g-elevator').animate({
 			opacity:1
 		},1000);
+       	}
+       	else if(top<1000){
+       		  $('.g-elevator').css('display','none');
        	}
        	if(top<1800&&top>1300){
          fn(0);
@@ -206,26 +211,54 @@ huan();
        	else if(6300<top&&top<6800){
         fn(10);
        	}
-       	else if(6800<top&&top<7200){
+       	else if(6800<top&&top<7300){
         fn(11);
        	}
-
+       	else if(top>7201){
+        $('.g-elevator').css('display','none');
+        }
        	function fn(num){
        	a0.css('display','block');
         a1.css('display','none');
         a0[num].style.display = 'none';     
         a1[num].style.display = 'block';
         a1[num].style.color = '#ef353d';
+         $('.g-elevator').css('display','block');
        	}
        });
-       // 1700 2200
-       //1   2
-//     glup();
-//    function glup(num){
-//    	var a0=$('.g-elevator').find('li').eq(num).children('a').eq(0);//第0个li的第0个a
-//     	var a1=$('.g-elevator').find('li').eq(num).children('a').eq(1);
-//     	a0.css('display','none');       	
-//      a1.css('display','block');
-//      a1.css('color','#ef353d');
-//    }
+
+})();
+(function(){//搜索框
+	    var s=document.getElementById('search_input');
+	    var div=document.getElementsByClassName('divzzzz');
+ $('#search_input').bind('keyup',function(event){//键盘抬起，给出提示
+	var jqueryInput = $(this);
+	var searchText = jqueryInput.val();
+	var srarch=document.getElementById('search-suggest');
+	var oS = document.createElement('script');
+	oS.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+searchText+'&json=1&cb=fn1';
+	document.body.appendChild(oS);
+$('#search-suggest').show();
+ });//keyup结束
+
+ $('#search_input').click(function(){
+ 	$('#search_input').val('');
+ });
+$(document).bind('click',function(){//点击提示
+	$('#search-suggest').hide();
+});
+	window.fn1 = function(data){//jsonp接收数据
+		var html = '';
+		for(var i=0;i<data.s.length;i++){
+			html+='<div class="divzzzz">'+data.s[i]+'</div>';
+		}
+//			  
+		$('#search-result').html(html);		
+		 	for(var i=0;i<div.length;i++){
+		 	div[i].onclick=function(){
+		 		s.value=this.innerHTML;
+		 	};	 	
+		}
+
+	}
 })();
