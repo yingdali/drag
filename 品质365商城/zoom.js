@@ -79,8 +79,13 @@ function buy(){
 	var add=$('#addNumButton')[0];
 	var reduce=$('#reduceNumButton')[0];
 	var inputs=$('#buy-num')[0];
+	var cartnum=$('.cart-num')[0];
 	buy.onclick=function(){
 		span.innerHTML = window.localStorage.getItem('count');
+		$('.cart-num').addClass('animated rubberBand');
+		if(cartnum.className==rubberBand){
+			
+		}
 	}
 	add.onclick=function(){
 		num++;

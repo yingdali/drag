@@ -1,12 +1,57 @@
 	(function(){//动画
-	var scrollT =$(window).scrollTop();
-//	console.log(scrollT);
-//	console.log($('footer').children('section'))
-	if(scrollT==0){
-		$('.logo').find('h1').addClass('activem');
-	}else if(scrollT>=7381){
-		$('footer').children('section').addClass('show');
-	}
+	       $(window).bind('scroll',function(){
+       	var top=$(this).scrollTop();//当前窗口的滚动距离
+       	console.log(top)
+       	if(top>=900){
+       		$('#must').addClass('animated bounceInLeft');
+       	}
+        if(top>=1200){
+       		$('#baol').addClass('animated bounceInUp');
+       	}
+//      if(top>=1600){
+//     		$('.pictureq1 img').addClass('animated rubberBand');
+//     	}
+//      if(top>=2100){
+//     		$('.pictureq2 img').addClass('animated rubberBand');
+//     	}
+//      if(top>=2600){
+//     		$('.pictureq3 img').addClass('animated shake');
+//     	}
+//      if(top>=3000){
+//     		$('.pictureq4 img').addClass('animated shake');
+//     	}
+//     if(top>=3600){
+//     		$('.pictureq5 img').addClass('animated tada');
+//     	}
+//      if(top>=4200){
+//     		$('.pictureq6 img').addClass('animated tada');
+//     	}
+//      if(top>=4700){
+//     		$('.pictureq7 img').addClass('animated rubberBand');
+//     	}
+//      if(top>=5200){
+//     		$('.pictureq8 img').addClass('animated rubberBand');
+//     	}
+//       if(top>=5700){
+//     		$('.pictureq9 img').addClass('animated wobble');
+//     	}
+//      if(top>=6200){
+//     		$('.pictureq10 img').addClass('animated wobble');
+//     	}
+//      if(top>=6700){
+//     		$('.pictureq11 img').addClass('animated rubberBand');
+//     	}
+//      if(top>=7200){
+//     		$('.pictureq12 img').addClass('animated rubberBand');
+//     	}
+        if(top>=7450){
+       		$('#animate').addClass('animated bounceInRight');
+       	}
+        if(top>=7600){
+       		$('.show a').addClass('animated bounceInUp');
+       	}
+        });
+
 	})();
 //懒加载
 	$(window).scroll(fn1);
@@ -167,19 +212,22 @@ huan();
        	var a1=$('.txt');
        $(window).bind('scroll',function(){
        	var top=$(this).scrollTop();//当前窗口的滚动距离
-       	console.log(top)
+//     	console.log(top)
        	var po=$('.p-price1')[0];
        	var zz=$('.g-elevator');
        	if(top>1000){
        	$('.g-elevator').animate({
 			opacity:1
 		},1000);
+//		$('#must').addClass('animated bounceInLeft');
+//		$('#baol').addClass('animated bounceInUp');
        	}
        	else if(top<1000){
-       		  $('.g-elevator').css('display','none');
+         		  $('.g-elevator').css('display','none');
        	}
        	if(top<1800&&top>1300){
          fn(0);
+
        	}
        	else if(1800<top&&top<2300){
          fn(1);
@@ -215,7 +263,7 @@ huan();
         fn(11);
        	}
        	else if(top>7201){
-        $('.g-elevator').css('display','none');
+        	$('.g-elevator').css('display','none');
         }
        	function fn(num){
        	a0.css('display','block');
@@ -262,3 +310,4 @@ $(document).bind('click',function(){//点击提示
 
 	}
 })();
+

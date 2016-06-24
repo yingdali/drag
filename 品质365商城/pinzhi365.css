@@ -581,7 +581,27 @@
 				background-color: #f5f5f5;
 				padding-bottom: 27px;
 			}
-			
+			/*.lunbo img{
+				opacity: 0;
+			}
+			.zhenTop_brand img{
+				opacity: 0;
+			}
+			.zhenmust_check img{
+				opacity: 0;
+			}
+			.zhenbaoli img{
+				opacity: 0;
+			}
+			.zhenA1F img{
+				opacity: 0;
+			} 
+			.zhenerdun img{
+				opacity: 0;
+			}
+			footer img{
+				opacity: 0;
+			}*/
 			.Top_brand h2 {
 				line-height: 37px;
 				padding-top: 18px;
@@ -832,9 +852,6 @@
 			.lunbo .showw{
 				display: block;
 			}
-			.lunbo{
-				z-index: 20;
-			}
 			.category-sub{
 			    min-height: 460px;
 			    background-color: rgba(255,255,255,0.9);
@@ -925,5 +942,6 @@
 .zhenA1F div .li1_1 .color1 a {
 	    color: #8a9301;
 }
+
 
 
